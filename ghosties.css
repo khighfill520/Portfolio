@@ -4,6 +4,10 @@ body{
   background: #000;
   color: #FFF;
 }
+.header{
+  width: 100%;
+  height: 10%;
+}
 h3{
   text-align: center;
   font-family: "Passion One", sans-serif;
