@@ -5,3 +5,9 @@ h2{
   color: #FFF;
   text-align: center;
 }
+a:link, a:active, a:visited{
+  color: #FFF;
+}
+a:hover{
+  color: #000;
+}
