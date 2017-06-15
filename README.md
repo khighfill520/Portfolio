@@ -1,2 +1,2 @@
 # Portfolio
-My professional portfolio
+My professional portfolio, containing examples of my work with HTML, CSS, and JS.
