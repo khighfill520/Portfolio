@@ -5,6 +5,7 @@ body{
   color: #FFF;
 }
 h3{
-  align: center;
+  text-align: center;
   font-family: "Passion One", sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
