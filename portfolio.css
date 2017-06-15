@@ -1,5 +1,5 @@
 body{
-  background: -webkit-linear-gradient(left, #FFFFFF,#DCDCDC,#00CED1,#DCDCDC,#FFFFFF);
+  background: repeating-linear-gradient(135deg, #FFFFFF,#DCDCDC,#00CED1,#DCDCDC,#FFFFFF);
 }
 h2{
   color: #FFF;
