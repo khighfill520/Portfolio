@@ -1,3 +1,7 @@
 body{
   background: repeating-linear-gradient(#FFF 20%, #DCDCDC 10%, #00CE71 40%, #DCDCDC 10%, #FFF 20%);
 }
+h2{
+  color: #FFF;
+  text-align: center;
+}
