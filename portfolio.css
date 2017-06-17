@@ -36,11 +36,8 @@ p{
 }
 .navbar{
   background: #DCDCDC;
-  width: 30%;
   align: center;
   padding: 10px;
-  margin-left: 35%;
-  margin-right: 35%;
 }
 .navbar a{
   text-align: center;
