@@ -1,6 +1,5 @@
 body{
-  background: -webkit-linear-gradient(top, #4B0082, #556B2D, #DAA520, #FF4500, #DEB887);
-  background-size: 100%;
+  background: #CCFFFF;
 }
 h2{
   color: #FFF;
@@ -10,5 +9,5 @@ a:link, a:active, a:visited{
   color: #FFF;
 }
 a:hover{
-  color: #000;
+  color: #000033;
 }
