@@ -1,5 +1,6 @@
 body{
   background: -webkit-linear-gradient(top, #4B0082, #556B2D, #DAA520, #FF4500, #DEB887);
+  background-size: 100%;
 }
 h2{
   color: #FFF;
