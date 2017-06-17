@@ -23,3 +23,7 @@ a:hover{
 p{
   color: #000033;
 }
+.about{
+  width: 50%;
+  float: left;
+}
