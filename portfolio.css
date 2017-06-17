@@ -11,6 +11,11 @@ h2{
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
+nav{
+  background: #DCDCDC;
+  align: center;
+  padding: 10px;
+}
 h4{
   font-family: "Artifika", serif;
   color: #FFF;
@@ -33,11 +38,6 @@ p{
 .about{
   width: 50%;
   float: left;
-}
-.navbar{
-  background: #DCDCDC;
-  align: center;
-  padding: 10px;
 }
 .navbar a{
   text-align: center;
