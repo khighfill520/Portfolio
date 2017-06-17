@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Artifika');
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+
 body{
   background: #CCFFFF;
+  font-family: "Reem Kufi", sans-serif;
 }
 h2{
+  font-family: "Artifika", serif;
   color: #FFF;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
 h4{
+  font-family: "Artifika", serif;
   color: #FFF;
   text-align: left;
   text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
