@@ -4,12 +4,22 @@ body{
 h2{
   color: #FFF;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
+}
+h4{
+  color: #FFF;
+  text-align: left;
+  text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
 a:link, a:active, a:visited{
+  color: #000033;
+  text-decoration: none;
+}
+a:hover{
   color: #FFF;
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
-a:hover{
+p{
   color: #000033;
 }
