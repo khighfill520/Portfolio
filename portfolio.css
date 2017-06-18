@@ -44,3 +44,8 @@ p{
   float: right;
   padding: 10px;
 }
+.credit{
+  font-size: 6pt;
+  text-align: right;
+  margin-bottom: 10px;
+}
