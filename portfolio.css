@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
 body{
-  background: #CCFFFF;
+  background: #CCFFFF
+    url('background.jpg') fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
   font-family: "Reem Kufi", sans-serif;
 }
 h2{
