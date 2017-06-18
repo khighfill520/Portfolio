@@ -37,3 +37,7 @@ p{
   width: 50%;
   float: left;
 }
+.float_right{
+  float: right;
+  padding: 10px;
+}
