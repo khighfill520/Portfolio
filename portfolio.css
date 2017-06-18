@@ -17,6 +17,9 @@ h4{
   text-align: left;
   text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
+nav{
+  align: center;
+}
 a:link, a:active, a:visited{
   padding: 5px;
   color: #000033;
