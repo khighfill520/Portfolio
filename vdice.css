@@ -17,8 +17,8 @@ input[type="submit"]{
 .container{
   width: 30%;
   background: rgba(0, 0, 51, 0.1);
-  border: 3px solid;
-  border-color: #000033;
+  /*border: 3px solid;
+  border-color: #000033;*/
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
