@@ -91,4 +91,5 @@ function statroll() {
     }
     stats2 = stats.toString();
     document.getElementById("values2").innerHTML = stats2;
+  }
 }
