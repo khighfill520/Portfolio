@@ -8,6 +8,9 @@ function baseroll() {
   var j;
   var sum = 0;
   var rolls = [];
+  console.log(firstnum);
+  console.log(secnum);
+  console.log(thirdnum);
   
   //math
   for (i = 0; i < firstnum; i++) {
@@ -17,9 +20,9 @@ function baseroll() {
   //display rolls
   for (j = 0; j < firstnum; j++) {
     if (j < (firstnum - 1)) {
-      document.getElementById("values") = document.write(rolls[j] + ", ");
+      document.getElementById("values").innerHTML = (rolls[j] + ", ");
     } else {
-      document.getElementById("values") = document.write(rolls[j]);
+      document.getElementById("values").innerHTML = rolls[j];
     }
   }
   
@@ -28,5 +31,5 @@ function baseroll() {
     sum = (sum + rolls[k]);
   }
   sum = (sum + thirdnum);
-  document.getElementById("sum") = document.write(sum);
+  document.getElementById("sum").innerHTML = sum;
 }
