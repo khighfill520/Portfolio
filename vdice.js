@@ -47,11 +47,11 @@ function advroll() {
   }
   
   //get second rolls and display
-  for (j = (i + 1); j < (firstnum + thirdnum - 1); j++) {
+  for (j = (i + 1); j < (firstnum + thirdnum); j++) {
     rolls[j] = Math.floor(Math.random()*fourthnum+1);
   }
   rolls2 = rolls.toString();
-  document.getElementById("values").innerHTML = rolls2;
+  document.getElementById("values1").innerHTML = rolls2;
  
   
   //get and display sum
@@ -59,5 +59,5 @@ function advroll() {
     sum = (sum + parseInt(rolls[k]));
   }
   sum = (sum + fifthnum);
-  document.getElementById("sum").innerHTML = sum;
+  document.getElementById("sum1").innerHTML = sum;
 }
