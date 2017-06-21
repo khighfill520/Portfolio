@@ -6,7 +6,7 @@ function baseroll() {
   var thirdnum = document.getElementById("tnum").value;
   var i;
   var j;
-  var sum = 0;
+  var sum;
   var rolls = [];
   var rolls2;
   console.log(firstnum);
