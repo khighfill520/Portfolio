@@ -20,7 +20,7 @@ function baseroll() {
   //display rolls
   for (j = 0; j < firstnum; j++) {
     if (j < (firstnum - 1)) {
-      document.getElementById("values").innerHTML = (rolls[j] + ", ");
+      document.getElementById("values").innerHTML = document.getElementById("values").innerHTML + (rolls[j] + ", ");
     } else {
       document.getElementById("values").innerHTML = rolls[j];
     }
