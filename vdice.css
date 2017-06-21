@@ -15,7 +15,6 @@ input[type="submit"]{
   box-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
 .container{
-  width: 30%;
   background: rgba(0, 0, 51, 0.1);
   /*border: 3px solid;
   border-color: #000033;*/
@@ -25,9 +24,14 @@ input[type="submit"]{
   padding: 5px 10px;
   margin: auto;
 }
-#dice_base{
+#base{
+  width: 30%;
   float: left;
 }
-#dice_adv{
+#adv{
+  width: 50%;
   float: right;
+}
+#stat{
+  width: 70%;
 }
