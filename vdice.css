@@ -28,3 +28,6 @@ input[type="submit"]{
 #dice_base{
   float: left;
 }
+#dice_adv{
+  float: right;
+}
