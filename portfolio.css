@@ -48,6 +48,6 @@ p{
 .credit{
   font-size: 8pt;
   text-align: right;
-  position: static;
+  position: absolute;
   bottom: 10px;
 }
