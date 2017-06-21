@@ -20,12 +20,11 @@
         </div>
         <div class="container" id="dice_base">
             <h4>Base Rolls</h4>
-            <form id="base" method="post" onsubmit="return baseroll()">
+            <form id="base" method="post">
                 <input type="text" id="fnum" placeholder="0" />d
                 <input type="text" id="snum" placeholder="0" /> 
-                <input type="text" class="mods" id="mod" value="+" /> 
-                <input type="text" id="tnum" value="0" /> 
-                <input type="submit" value="Submit" /><br />
+                <input type="text" id="tnum" value="+0" /> 
+                <input type="submit" value="Submit" onClick="baseroll();" /><br />
                 Rolls: <span id="values"></span><br />
                 Sum: <span id="sum"></span>
             </form>
