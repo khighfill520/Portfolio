@@ -67,7 +67,7 @@ function statroll() {
   var firstnum = parseInt(document.getElementById("fnum2").value);
   var secnum = parseInt(document.getElementById("snum2").value);
   var thirdnum = parseInt(document.getElementById("tnum2").value);
-  var fourthnum = parseInt(document.getElementById("fonum").value);
+  var fourthnum = parseInt(document.getElementById("fonum1").value);
   var i;
   var j;
   var k;
