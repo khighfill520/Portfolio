@@ -48,6 +48,6 @@ p{
 .credit{
   font-size: 8pt;
   text-align: right;
-  v-align: bottom;
-  margin-bottom: 10px;
+  position: static;
+  bottom: 10px;
 }
