@@ -7,7 +7,7 @@ function baseroll() {
   var i;
   var j;
   var sum = 0;
-  array rolls;
+  var rolls = [];
   
   //math
   for (i = 0; i < firstnum; i++) {
