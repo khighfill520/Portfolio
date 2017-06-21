@@ -18,7 +18,9 @@
             </nav>
         </div>
         <div class="dice_base">
-            <input type="text" id="fnum" />d<input type="text" id="snum" /> <input type="text" id="mod" /> <input type="text" id="tnum" /> <input type="submit" value="Submit" />
+            <form method="post" onsubmit="return baseroll()">
+                <input type="text" id="fnum" />d<input type="text" id="snum" /> <input type="text" id="mod" /> <input type="text" id="tnum" /> <input type="submit" value="Submit" />
+            </form>
         </div>
     </body>
 </html>
