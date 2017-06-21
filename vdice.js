@@ -51,12 +51,11 @@ function advroll() {
     rolls[j] = Math.floor(Math.random()*fourthnum+1);
   }
   rolls2 = rolls.toString();
-  console.log(rolls2);
   document.getElementById("values1").innerHTML = rolls2;
  
   
   //get and display sum
-  for (k = 0; k <= j; k++) {
+  for (k = 0; k < j; k++) {
     sum = (sum + parseInt(rolls[k]));
   }
   sum = (sum + fifthnum);
