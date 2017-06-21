@@ -72,13 +72,15 @@ function statroll() {
   var j;
   var k;
   var stats2;
-  var min = 6;
-  var sum = 0;
+  var min;
+  var sum;
   var rolls = [];
   var stats = [];
   
   //initiate stat counter
   for (k = 0; k < fourthnum; k++) {
+    min = 6;
+    sum = 0;
 
     //get rolls 
     for (i = 0; i < firstnum; i++) {
