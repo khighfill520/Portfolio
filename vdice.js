@@ -61,3 +61,34 @@ function advroll() {
   sum = (sum + fifthnum);
   document.getElementById("sum1").innerHTML = sum;
 }
+function statroll() {
+  
+  //set variables
+  var firstnum = parseInt(document.getElementById("fnum2").value);
+  var secnum = parseInt(document.getElementById("snum2").value);
+  var thirdnum = parseInt(document.getElementById("tnum2").value);
+  var i;
+  var j;
+  var k;
+  var stats2;
+  var min = 6;
+  var sum = 0;
+  var rolls = [];
+  var stats = [];
+  
+  //get rolls 
+  for (i = 0; i < firstnum; i++) {
+      rolls[i] = Math.floor(Math.random()*secnum+1);
+  }
+  
+  //find and delete minimum(s)
+  for (j = 0; j < (firstnum - thirdnum); j++) {
+    for (k = 0; k < firstnum; k++) {
+      if (rolls[k] < min) {
+        rolls.splice(k, 1);
+      }
+      stats[j] = (sum + parseInt(rolls[j]));
+    }
+    stats2 = stats.toString();
+    document.getElementById("values2").innerHTML = stats2;
+}
