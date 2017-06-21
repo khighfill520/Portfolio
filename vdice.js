@@ -1,5 +1,4 @@
 function baseroll() {
-  e.preventDefault();
   
   //set variables
   var firstnum = parseInt(document.getElementById("fnum").value);
@@ -28,4 +27,5 @@ function baseroll() {
   }
   sum = (sum + thirdnum);
   document.getElementById("sum").innerHTML = sum;
+  e.preventDefault();
 }
