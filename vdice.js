@@ -79,6 +79,7 @@ function statroll() {
   //get rolls 
   for (i = 0; i < firstnum; i++) {
       rolls[i] = Math.floor(Math.random()*secnum+1);
+    console.log(rolls[i]);
   }
   
   //find and delete minimum(s)
@@ -88,6 +89,7 @@ function statroll() {
         rolls.splice(k, 1);
       }
       stats[j] = (sum + parseInt(rolls[j]));
+      console.log(stats[j]);
     }
     stats2 = stats.toString();
     document.getElementById("values2").innerHTML = stats2;
