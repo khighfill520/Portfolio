@@ -1,12 +1,12 @@
 function baseroll() {
   
   //set variables
-  var firstnum = document.getElementById("fnum").value;
-  var secnum = document.getElementById("snum").value;
-  var thirdnum = document.getElementById("tnum").value;
+  var firstnum = parseInt(document.getElementById("fnum").value);
+  var secnum = parseInt(document.getElementById("snum").value);
+  var thirdnum = parseInt(document.getElementById("tnum").value);
   var i;
   var j;
-  var sum;
+  var sum = 0;
   var rolls = [];
   var rolls2;
   console.log(firstnum);
@@ -23,7 +23,7 @@ function baseroll() {
   
   //get and display sum
   for (k = 0; k < firstnum; k++) {
-    sum = (sum + rolls[k]);
+    sum = (sum + parseInt(rolls[k]));
   }
   sum = (sum + thirdnum);
   document.getElementById("sum").innerHTML = sum;
