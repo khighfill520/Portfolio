@@ -1,9 +1,9 @@
 function baseroll() {
   
   //set variables
-  var firstnum = document.getElementById("fnum");
-  var secnum = document.getElementById("snum");
-  var thirdnum = document.getElementById("tnum");
+  var firstnum = document.getElementById("fnum").innerHTML;
+  var secnum = document.getElementById("snum").innerHTML;
+  var thirdnum = document.getElementById("tnum").innerHTML;
   var i;
   var j;
   var sum = 0;
