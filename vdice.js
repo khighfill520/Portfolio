@@ -79,18 +79,17 @@ function statroll() {
   //get rolls 
   for (i = 0; i < firstnum; i++) {
       rolls[i] = Math.floor(Math.random()*secnum+1);
-    console.log("1");
   }
   
   //find and delete minimum(s)
   for (j = 0; j < (firstnum - thirdnum); j++) {
     for (k = 0; k < firstnum; k++) {
       if (rolls[k] < min) {
-        rolls.splice(k, 1);
+        min = rolls[k];
       }
-      stats[j] = (sum + parseInt(rolls[j]));
-      console.log(stats[j]);
+      rolls.splice(k, 1);
     }
+    stats[j] = (sum + parseInt(rolls[j]));
     stats2 = stats.toString();
     document.getElementById("values2").innerHTML = stats2;
   }
