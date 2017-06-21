@@ -8,23 +8,18 @@ function baseroll() {
   var j;
   var sum = 0;
   var rolls = [];
+  var rolls2;
   console.log(firstnum);
   console.log(secnum);
   console.log(thirdnum);
   
-  //math
+  //get and display rolls 
   for (i = 0; i < firstnum; i++) {
       rolls[i] = Math.floor(Math.random()*secnum+1);
   }
-  
-  //display rolls
-  for (j = 0; j < firstnum; j++) {
-    if (j < (firstnum - 1)) {
-      document.getElementById("values").innerHTML = document.getElementById("values").innerHTML + (rolls[j] + ", ");
-    } else {
-      document.getElementById("values").innerHTML = rolls[j];
-    }
-  }
+  rolls2 = rolls.toString();
+  document.getElementById("values").innerHTML = rolls2;
+ 
   
   //get and display sum
   for (k = 0; k < firstnum; k++) {
