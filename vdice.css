@@ -16,11 +16,11 @@ input[type="submit"]{
 }
 .container{
   height: 7.5em;
-  width: 10em;
   background: rgba(0, 0, 51, 0.1);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   padding: 5px 10px;
-  margin: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
