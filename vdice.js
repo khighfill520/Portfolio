@@ -84,9 +84,10 @@ function statroll() {
   //find and delete minimum(s)
   for (j = 0; j < (firstnum - thirdnum); j++) {
     for (k = 0; k < firstnum; k++) {
-      if (rolls[j] < min) {
-        min = rolls[j];
-      rolls.splice(j, 1);
+      if (rolls[k] < min) {
+        min = rolls[k];
+      rolls.splice(k, 1);
+        firstnum = (firstnum - 1);
       }
     }
     stats[j] = (sum + parseInt(rolls[j]));
