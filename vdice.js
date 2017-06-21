@@ -16,7 +16,7 @@ function baseroll() {
   
   //display rolls
   for (j = 0; j < firstnum; j++) {
-    if (j < firstnum - 1) {
+    if (j < (firstnum - 1)) {
       document.getElementById("values") = document.write(rolls[j]", ");
     } else {
       document.getElementById("values") = document.write(rolls[j]);
