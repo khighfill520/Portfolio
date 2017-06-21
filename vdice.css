@@ -15,7 +15,8 @@ input[type="submit"]{
   box-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
 .container{
-  width: 30%;
+  width: 25%;
+  height: 5em;
   background: rgba(0, 0, 51, 0.1);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
