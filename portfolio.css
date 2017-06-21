@@ -23,6 +23,7 @@ h4{
 }
 nav{
   text-align: center;
+  margin-bottom: 10px;
 }
 a:link, a:active, a:visited{
   padding: 5px;
