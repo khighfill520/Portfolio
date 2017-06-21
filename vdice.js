@@ -47,10 +47,11 @@ function advroll() {
   }
   
   //get second rolls and display
-  for (j = (i + 1); j < (firstnum + thirdnum); j++) {
+  for (j = i; j < (firstnum + thirdnum); j++) {
     rolls[j] = Math.floor(Math.random()*fourthnum+1);
   }
   rolls2 = rolls.toString();
+  console.log(rolls2);
   document.getElementById("values1").innerHTML = rolls2;
  
   
