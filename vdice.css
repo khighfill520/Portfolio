@@ -15,9 +15,6 @@ input[type="submit"]{
   border-color: #000033;
   padding: 0px, 5px, 5px;
 }
-.mods{
-  width: 1em;
-}
 #dice_base{
   width: 30%;
   float: left;
