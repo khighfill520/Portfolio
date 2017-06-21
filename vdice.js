@@ -3,7 +3,6 @@ function baseroll() {
   //set variables
   var firstnum = document.getElementById("fnum");
   var secnum = document.getElementById("snum");
-  var modifier = document.getElementById("mod");
   var thirdnum = document.getElementById("tnum");
   var i;
   var j;
