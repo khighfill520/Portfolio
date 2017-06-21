@@ -67,6 +67,7 @@ function statroll() {
   var firstnum = parseInt(document.getElementById("fnum2").value);
   var secnum = parseInt(document.getElementById("snum2").value);
   var thirdnum = parseInt(document.getElementById("tnum2").value);
+  var fourthnum = parseInt(document.getElementById("fonum").value);
   var i;
   var j;
   var k;
@@ -76,22 +77,26 @@ function statroll() {
   var rolls = [];
   var stats = [];
   
-  //get rolls 
-  for (i = 0; i < firstnum; i++) {
+  //initiate stat counter
+  for (k = 0; k < fourthnum; k++) {
+
+    //get rolls 
+    for (i = 0; i < firstnum; i++) {
       rolls[i] = Math.floor(Math.random()*secnum+1);
-  }
-  
-  //find and delete minimum(s)
-  for (j = 0; j < (firstnum - thirdnum); j++) {
-    for (k = 0; k < firstnum; k++) {
-      if (rolls[k] < min) {
-        min = rolls[k];
-      rolls.splice(k, 1);
-        firstnum = (firstnum - 1);
-      }
     }
-    stats[j] = (sum + parseInt(rolls[j]));
-    stats2 = stats.toString();
-    document.getElementById("values2").innerHTML = stats2;
+  
+    //find and delete minimum(s)
+    rolls.sort();
+    while (rolls.length > thirdnum) {
+      rolls.shift();
+    }
+  
+    //get sum of remaining rolls
+    for (j = 0; j < thirdnum; j++) {
+      sum = (sum + parseInt(rolls[j]));
+    }
+    stats[k] = sum;
   }
+  stats2 = stats.toString();
+  document.getElementById("values2").innerHTML = stats2;
 }
