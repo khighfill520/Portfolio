@@ -82,8 +82,8 @@ function statroll() {
   }
   
   //find and delete minimum(s)
-  for (j = 0; j < (firstnum - thirdnum); j++) {
-    for (k = 0; k < firstnum; k++) {
+  for (j = 0; j < firstnum; j++) {
+    for (k = 0; k < (firstnum - thirdnum); k++) {
       if (rolls[k] < min) {
         min = rolls[k];
       }
