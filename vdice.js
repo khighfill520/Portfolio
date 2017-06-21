@@ -79,7 +79,7 @@ function statroll() {
   //get rolls 
   for (i = 0; i < firstnum; i++) {
       rolls[i] = Math.floor(Math.random()*secnum+1);
-    console.log(rolls[i]);
+    console.log("1");
   }
   
   //find and delete minimum(s)
