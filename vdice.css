@@ -1,6 +1,6 @@
 h4{
-  -webkit-margin-before: 5px;
-  -webkit-margin-after: 5px;
+  -webkit-margin-before: none;
+  -webkit-margin-after: none;
 }
 input[type="text"]{
   width: 3em;
@@ -20,7 +20,7 @@ input[type="submit"]{
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  padding: 0px 5px 5px;
+  padding: 10px;
 }
 #dice_base{
   float: left;
