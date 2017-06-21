@@ -1,4 +1,5 @@
 function baseroll() {
+  e.preventDefault();
   
   //set variables
   var firstnum = parseInt(document.getElementById("fnum").value);
@@ -9,9 +10,6 @@ function baseroll() {
   var sum = 0;
   var rolls = [];
   var rolls2;
-  console.log(firstnum);
-  console.log(secnum);
-  console.log(thirdnum);
   
   //get and display rolls 
   for (i = 0; i < firstnum; i++) {
@@ -27,5 +25,4 @@ function baseroll() {
   }
   sum = (sum + thirdnum);
   document.getElementById("sum").innerHTML = sum;
-  e.preventDefault();
 }
