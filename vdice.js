@@ -93,6 +93,7 @@ function statroll() {
   
     //get sum of remaining rolls
     for (j = 0; j < thirdnum; j++) {
+      sum = 0;
       sum = (sum + parseInt(rolls[j]));
     }
     stats[k] = sum;
