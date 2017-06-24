@@ -21,11 +21,10 @@ h4{
   color: #FFF;
   text-align: left;
   text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
-  border-bottom: 1px solid;
-  border-bottom-color: #000033;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
 nav{
   text-align: center;
