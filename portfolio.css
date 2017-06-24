@@ -52,3 +52,7 @@ p{
   bottom: 10px;
   right: 5px;
 }
+.projects a{
+  padding: 0px;
+  margin: 0px;
+}
