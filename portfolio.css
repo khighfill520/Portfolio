@@ -29,8 +29,8 @@ a:link, a:active, a:visited{
   text-decoration: none;
 }
 a:hover{
-  background: -webkit-radial-gradient(white, transparent);
-  background: -o-radial-gradient(white, transparent);
+  background: -webkit-radial-gradient(white 75%, transparent);
+  background: -o-radial-gradient(white 75%, transparent);
   color: #000011;
   text-decoration: none;
 }
