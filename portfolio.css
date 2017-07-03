@@ -29,10 +29,9 @@ a:link, a:active, a:visited{
   text-decoration: none;
 }
 a:hover{
-  background: -webkit-radial-gradient(white 10%, transparent);
-  background: -o-radial-gradient(white 10%, transparent);
   color: #000011;
   text-decoration: none;
+  box-shadow: 0 0 15px #FFF inset;
   transition: 1s;
 }
 p{
