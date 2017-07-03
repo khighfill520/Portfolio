@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
 body{
-  background: #CCFFFF
-    url('background.jpg') fixed;
+  background: #000011;
   background-repeat: no-repeat;
   background-size: 100%;
   font-family: "Reem Kufi", sans-serif;
-  color: #000033;
+  color: #FFF;
+  box-shadow: 0 0 25px #FFF inset;
 }
 h2{
   font-family: "Artifika", serif;
