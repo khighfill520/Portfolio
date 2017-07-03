@@ -29,10 +29,11 @@ a:link, a:active, a:visited{
   text-decoration: none;
 }
 a:hover{
-  background: -webkit-radial-gradient(white 25%, transparent);
-  background: -o-radial-gradient(white 25%, transparent);
+  background: -webkit-radial-gradient(white 10%, transparent);
+  background: -o-radial-gradient(white 10%, transparent);
   color: #000011;
   text-decoration: none;
+  transition: 1s;
 }
 p{
   color: #000033;
