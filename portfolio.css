@@ -46,8 +46,8 @@ p{
   padding: 10px;
 }
 .intro{
-  position: absolute;
-  top: 40%;
+  margin-top: 250px;
+  margin-bottom: 250px;
 }
 .projects{
   width: 30%;
