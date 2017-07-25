@@ -45,6 +45,10 @@ p{
   float: right;
   padding: 10px;
 }
+.intro{
+  position: absolute;
+  top: 40%;
+}
 .projects{
   width: 30%;
 }
