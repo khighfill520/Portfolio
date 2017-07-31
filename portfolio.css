@@ -39,13 +39,18 @@ input[type="text"]{
   width: 3em;
 }
 input[type="submit"]{
-  background: #000033;
+  background: #000011;
   color: #FFF;
   border: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+input[type="submit"]:hover{
+  background: rgba(0, 0, 0, 0);
+  color: #000011;
+  box-shadow: 0 0 5px #FFF inset;
 }
 nav{
   text-align: center;
