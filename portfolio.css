@@ -62,7 +62,6 @@ p{
 .button{
   float: left;
   padding: 10px;
-  margin-left: 50px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -74,6 +73,10 @@ p{
 .float_right{
   float: right;
   padding: 10px;
+}
+.games{
+  margin-bottom: 50px;
+  margin-left: 50px;
   margin-right: 50px;
 }
 .intro{
