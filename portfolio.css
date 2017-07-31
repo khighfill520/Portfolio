@@ -26,7 +26,12 @@ h2{
 }
 h4{
   font-family: "Artifika", serif;
-  color: #FFF;
+  color: #000011;
+  background: #FFF;
+  width: 30%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   text-align: left;
 }
 nav{
