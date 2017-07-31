@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
 html:before{
-  position: static;
+  position: fixed;
   width: 100%;
   height: 100%;
   content:"";
