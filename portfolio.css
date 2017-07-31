@@ -91,9 +91,6 @@ p{
   transition: 1s;
 }
 .container{
-  height: 6em;
-  width: 22em;
-  background: rgba(0, 0, 51, 0.1);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
