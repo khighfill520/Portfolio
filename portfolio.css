@@ -60,12 +60,13 @@ p{
   margin-bottom: 50px;
 }
 .button{
-  position: relative;
+  display: block;
   float: left;
   padding: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  text-align: center;
 }
 .button:hover{
   box-shadow: 0 0 40px #FFF inset;
