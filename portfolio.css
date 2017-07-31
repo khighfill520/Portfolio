@@ -101,6 +101,7 @@ p{
   -webkit-margin-before: 0px;
   -webkit-margin-after: 5px;
   text-align: center;
+  padding-left: 0px;
 }
 .float_right{
   float: right;
