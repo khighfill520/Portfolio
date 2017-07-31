@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Artifika');
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
-html:before {
+html:before{
   width: 100%;
   height: 100%;
   content:"";
   box-shadow: 0 0 70px #FFF inset;
-
-pointer-events:none;
+  pointer-events:none;
   z-index: 1000;
 }
 
