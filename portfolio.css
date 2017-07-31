@@ -99,6 +99,7 @@ p{
   text-align: center;
 }
 .dice_head{
+  width: 50%;
   margin: auto;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 5px;
