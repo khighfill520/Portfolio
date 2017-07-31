@@ -59,9 +59,22 @@ p{
   margin-left: 50px;
   margin-bottom: 50px;
 }
+.button{
+  float: left;
+  padding: 10px;
+  margin-left: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.button:hover{
+  box-shadow: 0 0 40px #FFF inset;
+  transition: 1s;
+}
 .float_right{
   float: right;
   padding: 10px;
+  margin-right: 50px;
 }
 .intro{
   margin-top: 300px;
