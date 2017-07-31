@@ -71,6 +71,8 @@ p{
 }
 .projects{
   width: 30%;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 .projects a{
   padding: 0px;
