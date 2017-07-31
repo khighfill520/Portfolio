@@ -99,6 +99,7 @@ p{
 .dice_head{
   -webkit-margin-before: 0px;
   -webkit-margin-after: 5px;
+  text-align: center;
 }
 .float_right{
   float: right;
