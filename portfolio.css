@@ -51,6 +51,7 @@ input[type="submit"]:hover{
   background: rgba(0, 0, 0, 0);
   color: #000011;
   box-shadow: 0 0 20px #FFF inset;
+  transition: 1s;
 }
 nav{
   text-align: center;
