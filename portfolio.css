@@ -50,7 +50,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background: rgba(0, 0, 0, 0);
   color: #000011;
-  box-shadow: 0 0 10px #FFF inset;
+  box-shadow: 0 0 20px #FFF inset;
 }
 nav{
   text-align: center;
