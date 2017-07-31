@@ -94,7 +94,7 @@ p{
   padding: 5px 10px;
   margin-left: 15px;
   margin-bottom: 15px;
-  text-align: center;
+  align: center;
 }
 .dice_head{
   -webkit-margin-before: 0px;
