@@ -35,6 +35,18 @@ h4{
   text-align: left;
   padding-left: 10px;
 }
+input[type="text"]{
+  width: 3em;
+}
+input[type="submit"]{
+  background: #000033;
+  color: #FFF;
+  border: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
+}
 nav{
   text-align: center;
   margin-bottom: 10px;
@@ -71,6 +83,21 @@ p{
 .button:hover{
   box-shadow: 0 0 40px #FFF inset;
   transition: 1s;
+}
+.container{
+  height: 6em;
+  width: 22em;
+  background: rgba(0, 0, 51, 0.1);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.dice_head{
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 5px;
 }
 .float_right{
   float: right;
