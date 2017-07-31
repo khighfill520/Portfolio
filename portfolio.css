@@ -59,7 +59,8 @@ p{
   margin-left: 50px;
   margin-bottom: 50px;
 }
-a .button{
+.button{
+  position: relative;
   float: left;
   padding: 10px;
   -webkit-border-radius: 10px;
