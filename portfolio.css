@@ -50,6 +50,7 @@ p{
 .about{
   width: 50%;
   float: left;
+  margin-left: 100px;
 }
 .float_right{
   float: right;
