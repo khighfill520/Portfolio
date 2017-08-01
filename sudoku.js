@@ -27,7 +27,7 @@ function sudoku(value) {
             }
         }
     }    
-    cells = document.getElementByTagName('input');
+    cells = document.getElementsByTagName('input');
     cells.setAttribute('type', 'text');
     div.appendChild(table);
 }
