@@ -12,15 +12,15 @@ function sudoku(value) {
     var td;
     
     //generate table
-    for (i = 0; i < 9; i++) {
+    for (i = 1; i < 10; i++) {
         tr = table.insertRow();
         if (i % 3 == 0) {
             tr.setAttribute('class', 'heavy_bottom');
         }
-        for (j = 0; j < 9; j++) {
+        for (j = ; j < 10; j++) {
             td = tr.insertCell();
-            td.appendChild(text);
             text.setAttribute('type', 'text');
+            td.appendChild(text);
             if ( j % 3 == 0) {
                 td.setAttribute('class', 'heavy_right');
             }
