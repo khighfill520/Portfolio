@@ -17,13 +17,13 @@ function sudoku(value) {
         if (i % 3 == 0) {
             tr.setAttribute('class', 'heavy_bottom');
         }
-        for (j = ; j < 10; j++) {
+        for (j = 1; j < 10; j++) {
             td = tr.insertCell();
-            text.setAttribute('type', 'text');
             td.appendChild(text);
             if ( j % 3 == 0) {
                 td.setAttribute('class', 'heavy_right');
             }
+            text.setAttribute('type', 'text');
         }
     }
     div.appendChild(table);
