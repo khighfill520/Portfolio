@@ -159,6 +159,9 @@ p{
 .puzzle td{
   border: 1px solid;
   border-color: #FFF;
+  width: 2em;
+  height: 2em;
+  border-collapse: collapse;
 }
 .summary{
   text-align: center;
