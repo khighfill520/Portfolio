@@ -6,6 +6,7 @@ function sudoku(value) {
     table = document.createElement('table');
     text = document.createElement('input');
     buttons = $('input:submit');
+    var h;
     var i;
     var j;
     var k;
@@ -13,7 +14,11 @@ function sudoku(value) {
     var td;
     
     //remove buttons and generate table
-    buttons.parentNode.removeChild(buttons);    
+    for(var h = 0; h < buttons.length; i++) {
+        if(buttons[h].type.toLowerCase() == 'text') {
+            buttons.parentNode.removeChild(buttons); 
+        }
+    }   
     for (i = 1; i < 10; i++) {
         tr = table.insertRow();
         if ((i % 3) == 0) {
