@@ -3,7 +3,6 @@
     <head>
         <title>Sudoku - Kimber Highfill</title>
         <link rel="stylesheet" type="text/css" href="portfolio.css" />
-        <script type="text/javascript" src="sudoku.js"></script>
     </head>
     <body>
         <div class="intro">
@@ -17,9 +16,10 @@
             </nav>
         </div>
         <div id="puzzle">
-            <input type="submit" onclick="sudoku(this.value);" value="Easy" />
-            <input type="submit" onclick="sudoku(this.value);" value="Medium" />
-            <input type="submit" onclick="sudoku(this.value);" value="Hard" />
-        </div>
+            <input type="submit" value="Easy" onclick="sudoku(this.value);" />
+            <input type="submit" value="Medium" onclick="sudoku(this.value);" />
+            <input type="submit" value="Hard" onclick="sudoku(this.value);" />
+        </div>        
+        <script type="text/javascript" src="sudoku.js"></script>
     </body>
 </html>
