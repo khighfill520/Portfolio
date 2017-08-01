@@ -20,14 +20,13 @@ function sudoku(value) {
             tr.setAttribute('class', 'heavy_bottom');
         }
         for (j = 1; j < 10; j++) {
+            text.type = "text";
             td = tr.insertCell();
             td.appendChild(text);
             if ((j % 3) == 0) {
                 td.setAttribute('class', 'heavy_right');
             }
         }
-    }    
-    cells = document.getElementsByTagName('input');
-    cells.setAttribute('type', 'text');
+    }   
     div.appendChild(table);
 }
