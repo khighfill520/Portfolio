@@ -36,7 +36,7 @@ h4{
   padding-left: 10px;
 }
 input[type="button"]{
-  margin: auto;
+  align: center;
 }
 input[type="text"]{
   width: 3em;
