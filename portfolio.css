@@ -115,6 +115,14 @@ p{
   margin-left: 50px;
   margin-right: 50px;
 }
+.heavy_right{
+  border-right: 3px solid;
+  border-color: #FFF;
+}
+.heavy_bottom{
+  border-bottom: 3px solid;
+  border-color: #FFF;
+}
 .images{
   width: 75%;
   margin: auto auto 50px;
@@ -143,6 +151,14 @@ p{
 .projects a{
   padding: 0px;
   margin: 0px;
+}
+.puzzle table{
+  border: 3px solid;
+  border-color: #FFF;
+}
+.puzzle td{
+  border: 1px solid;
+  border-color: #FFF;
 }
 .summary{
   text-align: center;
