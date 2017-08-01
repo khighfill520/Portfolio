@@ -122,7 +122,7 @@ p{
 }
 .images img{
   width: 75%;
-  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
   margin: auto;
 }
 .images p{
