@@ -15,7 +15,7 @@ function sudoku(value) {
     
     //remove buttons and generate table
     for(var h = 0; h < buttons.length; i++) {
-        if(buttons[h].type.toLowerCase() == 'text') {
+        if(buttons[h].type.toLowerCase() == 'submit') {
             buttons.parentNode.removeChild(buttons); 
         }
     }   
