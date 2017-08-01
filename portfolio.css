@@ -156,21 +156,21 @@ p{
   padding: 0px;
   margin: 0px;
 }
-.puzzle{
+.summary{
+  text-align: center;
+}
+#puzzle{
   margin: auto auto 50px;
   text-align: center;
 }
-.puzzle table{
+#puzzle table{
   border: 3px solid;
   border-color: #FFF;
   border-collapse: collapse;
 }
-.puzzle td{
+#puzzle td{
   border: 1px solid;
   border-color: #FFF;
   width: 2em;
   height: 2em;
-}
-.summary{
-  text-align: center;
 }
