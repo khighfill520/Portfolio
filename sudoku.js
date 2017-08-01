@@ -4,7 +4,7 @@ function sudoku(value) {
     diff = value;
     div = document.getElementById('puzzle');
     table = document.createElement('table');
-    var text = document.createElement('input');
+    var text = document.createElement('input').setAttribute('type', 'text');
     var i;
     var j;
     var k;
@@ -18,7 +18,6 @@ function sudoku(value) {
             tr.setAttribute('class', 'heavy_bottom');
         }
         for (j = 1; j < 10; j++) {
-            text.setAttribute('type', 'text');
             td = tr.insertCell();
             td.appendChild(text);
             if ((j % 3) == 0) {
