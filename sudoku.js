@@ -19,7 +19,7 @@ function sudoku(value) {
         }
         for (j = 0; j < 9; j++) {
             td = tr.insertCell();
-            td.appendChild('text');
+            td.appendChild(text);
             text.setAttribute('type', 'text');
             if ( j % 3 == 0) {
                 td.setAttribute('class', 'heavy_right');
