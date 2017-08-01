@@ -5,7 +5,7 @@ function sudoku(value) {
     div = document.getElementById('puzzle');
     table = document.createElement('table');
     text = document.createElement('input');
-    buttons = document.getElementById('puzzle');
+    buttons = $('input:submit');
     var i;
     var j;
     var k;
