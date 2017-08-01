@@ -115,14 +115,6 @@ p{
   margin-left: 50px;
   margin-right: 50px;
 }
-.heavy_right{
-  border-right: 3px solid;
-  border-color: #FFF;
-}
-.heavy_bottom{
-  border-bottom: 3px solid;
-  border-color: #FFF;
-}
 .images{
   width: 75%;
   margin: auto auto 50px;
@@ -165,4 +157,13 @@ p{
 }
 .summary{
   text-align: center;
+}
+
+.heavy_right{
+  border-right: 3px solid;
+  border-color: #FFF;
+}
+.heavy_bottom{
+  border-bottom: 3px solid;
+  border-color: #FFF;
 }
