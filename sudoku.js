@@ -14,16 +14,16 @@ function sudoku(value) {
     //generate table
     for (i = 1; i < 10; i++) {
         tr = table.insertRow();
-        if (i % 3 == 0) {
+        if ((i % 3) == 0) {
             tr.setAttribute('class', 'heavy_bottom');
         }
         for (j = 1; j < 10; j++) {
+            text.setAttribute('type', 'text');
             td = tr.insertCell();
             td.appendChild(text);
-            if ( j % 3 == 0) {
+            if ((j % 3) == 0) {
                 td.setAttribute('class', 'heavy_right');
             }
-            text.setAttribute('type', 'text');
         }
     }
     div.appendChild(table);
