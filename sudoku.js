@@ -4,27 +4,30 @@ function sudoku(value) {
     diff = value;
     div = document.getElementById('puzzle');
     table = document.createElement('table');
-    var text = document.createElement('input');
+    text = document.createElement('input');
+    buttons = document.getElementById('puzzle');
     var i;
     var j;
     var k;
     var tr;
     var td;
     
-    //generate table
+    //remove buttons and generate table
+    buttons.parentNode.removeChild(buttons);    
     for (i = 1; i < 10; i++) {
         tr = table.insertRow();
         if ((i % 3) == 0) {
             tr.setAttribute('class', 'heavy_bottom');
         }
         for (j = 1; j < 10; j++) {
-            text = text.setAttribute('type', 'text');
             td = tr.insertCell();
             td.appendChild(text);
             if ((j % 3) == 0) {
                 td.setAttribute('class', 'heavy_right');
             }
         }
-    }
+    }    
+    cells = document.getElementByTagName('input');
+    cells.setAttribute('type', 'text');
     div.appendChild(table);
 }
