@@ -28,5 +28,5 @@ function sudoku(value) {
             }
         }
     }   
-    div.appendChild(table);
+    div.innerHTML = table;
 }
