@@ -153,13 +153,11 @@ p{
   padding: 0px;
   margin: 0px;
 }
-.puzzle{
-  margin: auto auto 50px;
-}
 .puzzle table{
   border: 3px solid;
   border-color: #FFF;
   border-collapse: collapse;
+  margin: auto auto 50px;
 }
 .puzzle td{
   border: 1px solid;
