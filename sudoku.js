@@ -13,6 +13,12 @@ function sudoku(value) {
     var tr;
     var td;
     
+    
+    for(var h = 0; h < inputs.length; i++) {
+        if(inputs[h].type.toLowerCase() == 'submit') {
+            inputs[h].parentNode.removeChild(inputs[h]); 
+        }
+    }   
     for (i = 1; i < 10; i++) {
         tr = table.insertRow();
         if ((i % 3) == 0) {
@@ -26,10 +32,5 @@ function sudoku(value) {
             }
         }
     }
-    for(var h = 0; h < inputs.length; i++) {
-        if(inputs[h].type.toLowerCase() == 'submit') {
-            inputs[h].parentNode.removeChild(inputs[h]); 
-        }
-    }   
     div.appendChild(table);
 }
