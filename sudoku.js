@@ -17,6 +17,7 @@ function sudoku(value) {
     var k;
     var l = 1;
     var m;
+    var n;
     var tr;
     var td;
     var array;
@@ -52,7 +53,16 @@ function sudoku(value) {
         }
     }
     for (m = 1; m < 82; m++) {
-        if 
-    td.innerHTML = '<input type="text" />';
+        for (g = 0; g < nums.length; g++) {
+            n = document.getElementById(m);
+            if (check()) {
+                n.innerHTML = nums[g];
+            } else {
+                td.innerHTML = '<input type="text" />';
+            }
+        }
+    }
     div.appendChild(table);
+}
+function check() {
 }
