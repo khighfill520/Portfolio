@@ -74,6 +74,12 @@ a:hover{
 p{
   color: #FFF;
 }
+td input[type="text"]{
+  width: 2em;
+  height: 2em;
+  margin: 0px;
+  border: none;
+}
 .about{
   width: 50%;
   float: left;
