@@ -20,7 +20,7 @@ function sudoku(value) {
         }
         for (j = 1; j < 10; j++) {
             td = tr.insertCell();
-            td.innerHTML = "<input type="text" />;
+            td.innerHTML = '<input type="text" />';
             if ((j % 3) == 0) {
                 td.setAttribute('class', 'heavy_right');
             }
