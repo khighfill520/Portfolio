@@ -55,7 +55,7 @@ function sudoku(value) {
     for (m = 1; m < 82; m++) {
         for (g = 0; g < nums.length; g++) {
             n = document.getElementById(m);
-            if (check()) {
+            if (check() AND array.includes(m)) {
                 n.innerHTML = nums[g];
             } else {
                 td.innerHTML = '<input type="text" />';
@@ -65,4 +65,5 @@ function sudoku(value) {
     div.appendChild(table);
 }
 function check() {
+    return true;
 }
