@@ -13,7 +13,7 @@ function sudoku(value) {
     var i;
     var j;
     var k;
-    var l;
+    var l = 1;
     var tr;
     var td;
         
@@ -23,18 +23,17 @@ function sudoku(value) {
             inputs[h].parentNode.removeChild(inputs[h]); 
         }
     }
-    for (l = 1; l < 82; l++) {
-        for (i = 1; i < 10; i++) {
-            tr = table.insertRow();
-            if ((i % 3) == 0) {
-                tr.setAttribute('class', 'heavy_bottom');
-            }
-            for (j = 1; j < 10; j++) {
-                td = tr.insertCell();
-                td.setAttribute('id', l);
-                if ((j % 3) == 0) {
-                    td.setAttribute('class', 'heavy_right');
-                }
+    for (i = 1; i < 10; i++) {
+        tr = table.insertRow();
+        if ((i % 3) == 0) {
+            tr.setAttribute('class', 'heavy_bottom');
+        }
+        for (j = 1; j < 10; j++) {
+            td = tr.insertCell();
+            td.setAttribute('id', l);
+            l++;
+            if ((j % 3) == 0) {
+                td.setAttribute('class', 'heavy_right');
             }
         }
     }
