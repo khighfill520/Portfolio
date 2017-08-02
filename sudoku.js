@@ -18,12 +18,12 @@ function sudoku(value) {
     var td;
         
     
-    for(var h = 0; h < inputs.length; i++) {
+    for(var h = 0; h < inputs.length; h++) {
         if(inputs[h].type.toLowerCase() == 'submit') {
             inputs[h].parentNode.removeChild(inputs[h]); 
         }
     }
-    for (l = 1, l < 82, l++) {
+    for (l = 1; l < 82; l++) {
         for (i = 1; i < 10; i++) {
             tr = table.insertRow();
             if ((i % 3) == 0) {
