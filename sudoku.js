@@ -30,7 +30,7 @@ function sudoku(value) {
         if(inputs[h].type.toLowerCase() == 'submit') {
             inputs[h].parentNode.removeChild(inputs[h]); 
         } else {
-            inputs[h].type = "text";
+            inputs[h].setAttribute('type', 'text');
         }
     }   
     div.appendChild(table);
