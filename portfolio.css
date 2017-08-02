@@ -83,6 +83,9 @@ td input[type="text"]{
   color: #FFF;
   text-align: center;
 }
+td input[type="text"]:focus{
+  outline: none;
+}
 .about{
   width: 50%;
   float: left;
