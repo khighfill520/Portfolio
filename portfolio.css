@@ -82,6 +82,7 @@ td input[type="text"]{
   background: rgba(0, 0, 0, 0);
   color: #FFF;
   text-align: center;
+  font: 16px "Reem Kufi";
 }
 td input[type="text"]:focus{
   outline: none;
