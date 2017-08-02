@@ -20,7 +20,7 @@ function sudoku(value) {
         }
         for (j = 1; j < 10; j++) {
             td = tr.insertCell();
-            td.appendChild(text);
+            td.innerHTML = "<input type="text" />;
             if ((j % 3) == 0) {
                 td.setAttribute('class', 'heavy_right');
             }
@@ -29,8 +29,6 @@ function sudoku(value) {
     for(var h = 0; h < inputs.length; i++) {
         if(inputs[h].type.toLowerCase() == 'submit') {
             inputs[h].parentNode.removeChild(inputs[h]); 
-        } else {
-            inputs[h].setAttribute('type', 'text');
         }
     }   
     div.appendChild(table);
