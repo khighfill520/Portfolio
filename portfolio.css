@@ -79,6 +79,8 @@ td input[type="text"]{
   height: 2em;
   margin: 0px;
   border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #FFF;
 }
 .about{
   width: 50%;
@@ -166,13 +168,14 @@ td input[type="text"]{
   text-align: center;
 }
 #puzzle{
-  margin: auto auto 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 #puzzle table{
   border: 3px solid;
   border-color: #FFF;
   border-collapse: collapse;
+  margin: auto;
 }
 #puzzle td{
   border: 1px solid;
