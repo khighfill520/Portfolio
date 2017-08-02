@@ -81,6 +81,7 @@ td input[type="text"]{
   border: none;
   background: rgba(0, 0, 0, 0);
   color: #FFF;
+  text-align: center;
 }
 .about{
   width: 50%;
