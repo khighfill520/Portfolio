@@ -33,5 +33,5 @@ function sudoku(value) {
             }
         }
     }   
-    div.innerHTML = table;
+    div.appendChild(table);
 }
