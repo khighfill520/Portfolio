@@ -124,7 +124,8 @@ function check(number) {
         if (i == 1) {
         } else {
             //check row for duplicates
-            for (j = 1; j < 9) {
+            while (j < 9) {
+                j = 1;
                 varj = document.getElementById(i);
                 while ((varj % 9) !== 0) {
                     varj = document.getElementById(i + j);
@@ -145,7 +146,8 @@ function check(number) {
                 }
             }
             //check column for duplicates
-            for (p = 1; p <=9;)
+            while (p <=9)
+                p = 1;
                 varp = document.getElementById(i);
             while ((varp / 9) < 9) {
                 varp = document.getElementById(i + p);
