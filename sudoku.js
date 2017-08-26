@@ -55,7 +55,7 @@ function sudoku(value) {
         }
         //classify cells
         for (m = 1; m < 82; m++) {
-            n = document.getElementById(p);
+            n = document.getElementById(m);
             if ((m % 3) == 0) {
                 heavy = " heavy_right";
             }
