@@ -59,21 +59,21 @@ function sudoku(value) {
             if ((m % 3) == 0) {
                 heavy = " heavy_right";
             }
-            if (((m / 3) <= 1) AND (i <= 3)) {
+            if (((m / 3) <= 1) && (i <= 3)) {
                 n.setAttribute('class', 'boxA' + heavy);
-            } else if (((m / 3) <= 2) AND (i <= 3) {
+            } else if (((m / 3) <= 2) && (i <= 3) {
                 n.setAttribute('class', 'boxB' + heavy);
-            } else if (((m / 3) <= 3) AND (i <= 3)) {
+            } else if (((m / 3) <= 3) && (i <= 3)) {
                 n.setAttribute('class', 'boxC' + heavy);
-            } else if (((m / 3) <= 1) AND (i <= 6)) {
+            } else if (((m / 3) <= 1) && (i <= 6)) {
                 n.setAttribute('class', 'boxD' + heavy);
-            } else if (((m / 3) <= 2) AND (i <= 6)) {
+            } else if (((m / 3) <= 2) && (i <= 6)) {
                 n.setAttribute('class', 'boxE' + heavy);
-            } else if (((m / 3) <= 3) AND (i <= 6)) {
+            } else if (((m / 3) <= 3) && (i <= 6)) {
                 n.setAttribute('class', 'boxF' + heavy);
-            } else if (((m / 3) <= 1) AND (i <= 9)) {
+            } else if (((m / 3) <= 1) && (i <= 9)) {
                 n.setAttribute('class', 'boxG' + heavy);
-            } else if (((m / 3) <= 2) AND (i <= 9)) {
+            } else if (((m / 3) <= 2) && (i <= 9)) {
                 n.setAttribute('class', 'boxH' + heavy);
             } else {
                 n.setAttribute('class', 'boxI' + heavy);
@@ -153,13 +153,13 @@ function check(number) {
             }
             q = 9 - p;
             for (r = 1; r <= q; r++) {
-                    comp2 = document.getElementById(i - r).innerHTML;
+                    comp2 = document.getElementById(i - (r * 9)).innerHTML;
                     if (comp1 == comp2) {
                         return false;
                     }
             }
             for (t = 1; t < p; t++) {
-                comp2 = document.getElementById(i + t).innerHTML;
+                comp2 = document.getElementById(i + (t * 9)).innerHTML;
                 if (comp1 == comp2) {
                     return false;
                 }
