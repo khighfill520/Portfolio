@@ -61,7 +61,7 @@ function sudoku(value) {
             }
             if (((m / 3) <= 1) && (i <= 3)) {
                 n.setAttribute('class', 'boxA' + heavy);
-            } else if (((m / 3) <= 2) && (i <= 3) {
+            } else if (((m / 3) <= 2) && (i <= 3)) {
                 n.setAttribute('class', 'boxB' + heavy);
             } else if (((m / 3) <= 3) && (i <= 3)) {
                 n.setAttribute('class', 'boxC' + heavy);
