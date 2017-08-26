@@ -55,13 +55,13 @@ function sudoku(value) {
         }
         //classify cells
         for (m = 1; m < 82; m++) {
-            //n = parseInt(document.getElementById(m));
-            //console.log(n);
+            n = parseInt(document.getElementById(m));
+            console.log(n);
             if ((m % 3) == 0) {
                 heavy = " heavy_right";
             }
             if (((m / 3) <= 1) && (i <= 3)) {
-                document.getElementById(m).setAttribute('class', 'boxA' + heavy);
+                n.className = 'boxA' + heavy;
             } else if (((m / 3) <= 2) && (i <= 3)) {
                 n.setAttribute('class', 'boxB' + heavy);
             } else if (((m / 3) <= 3) && (i <= 3)) {
