@@ -83,12 +83,12 @@ function sudoku(value) {
     
     //generate finished puzzle
     for (p = 0; p < 82; p++) {
-        t = document.getElementById(p);
+        t = document.getElementById(p).innerHTML;
         nums[p] = Math.floor(Math.random()*9+1);        
-        t.innerHTML = nums[p];
+        t = nums[p];
         while (check(nums[p]) === false) {
             nums[p] = Math.floor(Math.random()*9+1);       
-            t.innerHTML = nums[p];
+            t = nums[p];
         }
         //insert text boxes
         if (array.includes(p) === false) {            
