@@ -56,28 +56,27 @@ function sudoku(value) {
         //classify cells
         for (m = 1; m < 82; m++) {
             n = parseInt(document.getElementById(m));
-            console.log(n);
             if ((m % 3) == 0) {
                 heavy = " heavy_right";
             }
             if (((m / 3) <= 1) && (i <= 3)) {
                 n.className = 'boxA' + heavy;
             } else if (((m / 3) <= 2) && (i <= 3)) {
-                n.setAttribute('class', 'boxB' + heavy);
+                n.className = 'boxB' + heavy;
             } else if (((m / 3) <= 3) && (i <= 3)) {
-                n.setAttribute('class', 'boxC' + heavy);
+                n.className = 'boxC' + heavy;
             } else if (((m / 3) <= 1) && (i <= 6)) {
-                n.setAttribute('class', 'boxD' + heavy);
+                n.className = 'boxD' + heavy;
             } else if (((m / 3) <= 2) && (i <= 6)) {
-                n.setAttribute('class', 'boxE' + heavy);
+                n.className = 'boxE' + heavy;
             } else if (((m / 3) <= 3) && (i <= 6)) {
-                n.setAttribute('class', 'boxF' + heavy);
+                n.className = 'boxF' + heavy;
             } else if (((m / 3) <= 1) && (i <= 9)) {
-                n.setAttribute('class', 'boxG' + heavy);
+                n.className = 'boxG' + heavy;
             } else if (((m / 3) <= 2) && (i <= 9)) {
-                n.setAttribute('class', 'boxH' + heavy);
+                n.className = 'boxH' + heavy;
             } else {
-                n.setAttribute('class', 'boxI' + heavy);
+                n.className = 'boxI' + heavy;
             }
         }
     }
