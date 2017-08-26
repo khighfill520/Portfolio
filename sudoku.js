@@ -25,7 +25,6 @@ function sudoku(value) {
     var td;
     var array;
         
-    console.log(inputs);
     //set which pattern to use
     if (diff = 'Easy') {
         array = easy;
@@ -36,7 +35,7 @@ function sudoku(value) {
     }
     
     //remove buttons
-    for(h = 0; h < inputs.length; h++) {
+    for(h = 0; h < 3; h++) {
         if(inputs[h].type.toLowerCase() == 'submit') {
             inputs[h].parentNode.removeChild(inputs[h]); 
         }
