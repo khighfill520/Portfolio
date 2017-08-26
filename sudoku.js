@@ -55,12 +55,12 @@ function sudoku(value) {
         }
         //classify cells
         for (m = 1; m < 82; m++) {
-            //n = document.getElementById(m);
+            n = document.getElementById(m);
             if ((m % 3) == 0) {
                 heavy = " heavy_right";
             }
             if (((m / 3) <= 1) && (i <= 3)) {
-                document.getElementById(m).className = 'boxA' + heavy;
+                n.className = 'boxA' + heavy;
             } else if (((m / 3) <= 2) && (i <= 3)) {
                 n.className = 'boxB' + heavy;
             } else if (((m / 3) <= 3) && (i <= 3)) {
