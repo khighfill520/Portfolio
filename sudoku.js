@@ -50,7 +50,7 @@ function sudoku(value) {
         //generate cells
         for (j = 1; j < 10; j++) {
             td = tr.insertCell();
-            td.setAttribute('id', k);
+            td.id = k;
             console.log(document.getElementById(k));
             k++;
         }
