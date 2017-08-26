@@ -51,6 +51,7 @@ function sudoku(value) {
         for (j = 1; j < 10; j++) {
             td = tr.insertCell();
             td.setAttribute('id', k);
+            console.log(document.getElementById(k));
             k++;
         }
         //classify cells
