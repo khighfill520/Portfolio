@@ -25,7 +25,7 @@ function sudoku(value) {
     var td;
     var array;
         
-    console.log(inputs[]);
+    console.log(inputs);
     //set which pattern to use
     if (diff = 'Easy') {
         array = easy;
