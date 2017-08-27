@@ -4,7 +4,7 @@ function sudoku() {
     var diffs = ["Easy", "Medium", "Hard"];
     var div = document.getElementById('buttons');
     var input = document.createElement('input');
-    var puzzle = body.document.createElement('div');
+    var puzzle = document.createElement('div');
     var table = document.createElement('table');
     var g;
     var h;
