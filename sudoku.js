@@ -34,8 +34,8 @@ function sudoku() {
         }
         //generate cells
         for (k = 1; k < 10; k++) {
-            td = tr.insertCell();
-            td.id = m;
+            td = tr.insertCell(m);
+            //td.id = m;
             m++;
         }
     }
