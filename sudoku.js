@@ -17,7 +17,6 @@ function sudoku() {
     var td;
         
     //change buttons
-    div.innerHTML = "";
     for (i = 0; i < 3; i++) {
         input.setAttribute('type', 'submit');
         input.setAttribute('value', diffs[i]);
