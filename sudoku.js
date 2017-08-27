@@ -1,31 +1,42 @@
 function sudoku() {
     
     //declare variables
+    var diffs = ["Easy", "Medium", "Hard"];
     var div = document.getElementById('buttons');
+    var input = document.createElement('input');
     var table = document.createElement('table');
     var g;
     var h;
     var nums = [];
     var i;
     var j;
-    var k = 1;
+    var k;
+    var m = 1;
     var tr;
     var td;
         
     //change buttons
-    div.innerHTML = '<input type="submit" value="Easy" onclick="play(this.value);" /><input type="submit" value="Medium" onclick="play(this.value);" /><input type="submit" value="Hard" onclick="play(this.value);" />';
+    div.innerHTML = "";
+    for (i = 0; i < 3; i++) {
+        input.setAttribute('type', 'submit');
+        input.setAttribute('value', diffs[i]);
+        input.onclick = play(this.value);
+        div.appendChild('input');        
+    }
+        
+    
     
     //generate and classify rows
-    for (i = 1; i < 10; i++) {
+    for (j = 1; j < 10; j++) {
         tr = table.insertRow();
-        if ((i % 3) == 0) {
+        if ((j % 3) == 0) {
             tr.setAttribute('class', 'heavy_bottom');
         }
         //generate cells
-        for (j = 1; j < 10; j++) {
+        for (k = 1; k < 10; k++) {
             td = tr.insertCell();
-            td.id = k;
-            k++;
+            td.id = m;
+            m++;
         }
     }
     div.appendChild(table);
