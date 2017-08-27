@@ -172,7 +172,7 @@ td input[type="text"]:focus{
 .summary{
   text-align: center;
 }
-#puzzle{
+#puzzle, #buttons{
   margin-bottom: 50px;
   text-align: center;
 }
