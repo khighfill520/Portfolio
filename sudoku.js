@@ -22,7 +22,7 @@ function sudoku() {
         input.setAttribute('type', 'submit');
         input.setAttribute('value', diffs[i]);
         input.onclick = play(this.value);
-        div.appendChild('input');        
+        div.innerHTML += input;        
     }
         
     
@@ -41,7 +41,7 @@ function sudoku() {
         }
     }
     puzzle.id = "puzzle";
-    puzzle.appendChild(table);
+    puzzle.innerHTML = table;
 }
 
 function play(value) {
