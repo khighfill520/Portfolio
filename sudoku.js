@@ -4,6 +4,7 @@ function sudoku() {
     var diffs = ["Easy", "Medium", "Hard"];
     var div = document.getElementById('buttons');
     var input = document.createElement('input');
+    var puzzle = document.createElement('div');
     var table = document.createElement('table');
     var g;
     var h;
@@ -35,11 +36,12 @@ function sudoku() {
         //generate cells
         for (k = 1; k < 10; k++) {
             td = tr.insertCell(m);
-            //td.id = m;
+            td.id = m;
             m++;
         }
     }
-    div.appendChild(table);
+    puzzle.id = "puzzle";
+    puzzle.appendChild(table);
 }
 
 function play(value) {
