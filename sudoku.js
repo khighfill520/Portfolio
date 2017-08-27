@@ -4,7 +4,7 @@ function sudoku() {
     var diffs = ["Easy", "Medium", "Hard"];
     var div = document.getElementById('buttons');
     var input = document.createElement('input');
-    var puzzle = document.createElement('div');
+    var puzzle = body.document.createElement('div');
     var table = document.createElement('table');
     var g;
     var h;
@@ -17,6 +17,7 @@ function sudoku() {
     var td;
         
     //change buttons
+    div.innerHTML = "";
     for (i = 0; i < 3; i++) {
         input.setAttribute('type', 'submit');
         input.setAttribute('value', diffs[i]);
