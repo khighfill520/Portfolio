@@ -13,9 +13,7 @@ function sudoku() {
     var td;
         
     //change buttons
-    div.innerHTML = '<input type="submit" value="Easy" onClick="play(this.value);" />
-<input type="submit" value="Medium" onClick="play(this.value);" />
-<input type="submit" value="Hard" onClick="play(this.value);" />';
+    div.innerHTML = '<input type="submit" value="Easy" onClick="play(this.value);" /><input type="submit" value="Medium" onClick="play(this.value);" /><input type="submit" value="Hard" onClick="play(this.value);" />';
     
     //generate and classify rows
     for (i = 1; i < 10; i++) {
