@@ -73,21 +73,22 @@ function play(value) {
     //classify cells
     for (i = 1; i < 82; i++) {
         j = document.getElementById(i);
-        if (((i / 3) <= 1) && ((i / 9) <= 3)) {
+        k = (i / 9);
+        if ((k <= 3) && ((k / 3) <= 1)) {
             j.className += 'boxA';
-        } else if (((i / 3) <= 2) && ((i / 9) <= 3)) {
+        } else if ((k <= 3) && ((k / 3) <= 2)) {
             j.className += 'boxB';
-        } else if (((i / 3) <= 3) && ((i / 9) <= 3)) {
+        } else if ((k <= 3) && ((k / 3) <= 3)) {
             j.className += 'boxC';
-        } else if (((i / 3) <= 1) && ((i / 9) <= 6)) {
+        } else if ((k <= 6) && ((k / 3) <= 1)) {
             j.className += 'boxD';
-        } else if (((i / 3) <= 2) && ((i / 9) <= 6)) {
+        } else if ((k <= 6) && ((k / 3) <= 2)) {
             j.className += 'boxE';
-        } else if (((i / 3) <= 3) && ((i / 9) <= 6)) {
+        } else if ((k <= 6) && ((k / 3) <= 3)) {
             j.className += 'boxF';
-        } else if (((i / 3) <= 1) && ((i / 9) <= 9)) {
+        } else if ((k <= 9) && ((k / 3) <= 1)) {
             j.className += 'boxG';
-        } else if (((i / 3) <= 2) && ((i / 9) <= 9)) {
+        } else if ((k <= 9) && ((k / 3) <= 2)) {
             j.className += 'boxH';
         } else {
             j.className += 'boxI';
