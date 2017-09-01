@@ -2,7 +2,6 @@ function sudoku() {
     
     //declare variables
     var diffs = ["Easy", "Medium", "Hard"];
-    var bod = document.getElementsByTagName('body');
     var div = document.getElementById('buttons');
     var input = document.createElement('input');
     var puzzle = document.createElement('div');
@@ -38,7 +37,7 @@ function sudoku() {
             m++;
         }
     }
-    bod.innerHTML += puzzle;
+    body.innerHTML += puzzle;
     puzzle.setAttribute('id', 'puzzle');
     puzzle.appendChild(table);
 }
