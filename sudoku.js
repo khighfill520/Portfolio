@@ -97,7 +97,7 @@ function play(value) {
     }
     
     //generate finished puzzle
-    for (m = 0; m < 82; m++) {
+    for (m = 1; m < 82; m++) {
         n = document.getElementById(m);
         nums[m] = Math.floor(Math.random()*9+1);        
         n.innerHTML = nums[m];
