@@ -32,8 +32,13 @@ function sudoku() {
         }
         //generate cells
         for (k = 1; k < 10; k++) {
+        var heavy = "";
             td = tr.insertCell();
             td.setAttribute('id', m);
+            if ((k % 3) == 0) {
+                heavy = "heavy_right ";
+            }
+            td.className = heavy;
             m++;
         }
     }
@@ -47,7 +52,6 @@ function play(value) {
     //declare variables
     var array;
     var diff = value;
-    var heavy = "";
     var tds = document.getElementsByTagName('td');
     var easy = [1, 2, 3, 5, 7, 8, 9, 10, 12, 14, 16, 18, 19, 20, 21, 24, 25, 26, 27, 30, 31, 32, 33, 37, 38, 40, 41, 42, 44, 45, 49, 50, 51, 52, 55, 56, 57, 58, 61, 62, 63, 64, 66, 68, 70, 72, 73, 74, 75, 77, 79, 80, 81];
     var med = [4, 5, 6, 7, 8, 10, 13, 15, 19, 23, 24, 28, 29, 30, 32, 35, 36, 37, 39, 40, 41, 42, 43, 45, 46, 47, 50, 52, 53, 54, 58, 59, 63, 67, 69, 72, 74, 75, 76, 77, 78];
@@ -68,29 +72,25 @@ function play(value) {
     
     //classify cells
     for (i = 1; i < 82; i++) {
-        console.log(document.getElementById(i));
         j = document.getElementById(i);
-        if ((i % 3) == 0) {
-            heavy = " heavy_right";
-        }
         if (((i / 3) <= 1) && (i <= 3)) {
-            j.className = 'boxA' + heavy;
+            j.className += 'boxA';
         } else if (((i / 3) <= 2) && (i <= 3)) {
-            j.className = 'boxB' + heavy;
+            j.className += 'boxB';
         } else if (((i / 3) <= 3) && (i <= 3)) {
-            j.className = 'boxC' + heavy;
+            j.className += 'boxC';
         } else if (((i / 3) <= 1) && (i <= 6)) {
-            j.className = 'boxD' + heavy;
+            j.className += 'boxD';
         } else if (((i / 3) <= 2) && (i <= 6)) {
-            j.className = 'boxE' + heavy;
+            j.className += 'boxE';
         } else if (((i / 3) <= 3) && (i <= 6)) {
-            j.className = 'boxF' + heavy;
+            j.className += 'boxF';
         } else if (((i / 3) <= 1) && (i <= 9)) {
-            j.className = 'boxG' + heavy;
+            j.className += 'boxG';
         } else if (((i / 3) <= 2) && (i <= 9)) {
-            j.className = 'boxH' + heavy;
+            j.className += 'boxH';
         } else {
-            j.className = 'boxI' + heavy;
+            j.className += 'boxI';
         }
     }
     
