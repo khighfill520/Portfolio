@@ -75,7 +75,7 @@ function play(value) {
     for (i = 1; i < 82; i++) {
         j = document.getElementById(i);
         k = (i / 9);
-        if ((k <= 3) && (((i % 9) <= 3)) {
+        if ((k <= 3) && ((i % 9) <= 3)) {
             j.className = 'boxA';
         } else if ((k <= 3) && ((i % 9) <= 6)) {
             j.className = 'boxB';
