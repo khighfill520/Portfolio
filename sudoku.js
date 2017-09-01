@@ -133,7 +133,7 @@ function check(number) {
     var comp2;
     
     //get first number to compare
-    for (i = 0; i < 82; i++) {
+    for (i = 1; i < 82; i++) {
         comp1 = document.getElementById(i).innerHTML;
         if (i == 1) {
         } else {
