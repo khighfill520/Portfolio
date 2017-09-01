@@ -37,7 +37,7 @@ function sudoku() {
             m++;
         }
     }
-    puzzle.id = "puzzle";
+    puzzle.setAttribute('id', 'puzzle');
     puzzle.appendChild(table);
 }
 
