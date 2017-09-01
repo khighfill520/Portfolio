@@ -73,7 +73,7 @@ function play(value) {
     //classify cells
     for (i = 1; i < 82; i++) {
         j = document.getElementById(i);
-        if (((i / 3) <= 1) && (i <= 3)) {
+        if (((i / 3) <= 1) && ((i / 9) <= 3)) {
             j.className += 'boxA';
         } else if (((i / 3) <= 2) && ((i / 9) <= 3)) {
             j.className += 'boxB';
