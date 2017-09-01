@@ -60,6 +60,7 @@ function play(value) {
     var j;
     var k;
     var m;
+    var n;
     
     //set which pattern to use
     if (diff = 'Easy') {
@@ -96,16 +97,16 @@ function play(value) {
     }
     
     //generate finished puzzle
-    for (k = 0; k < 82; k++) {
-        m = document.getElementById(k).innerHTML;
-        nums[k] = Math.floor(Math.random()*9+1);        
-        m = nums[k];
-        while (check(nums[k]) === false) {
-            nums[k] = Math.floor(Math.random()*9+1);       
-            m = nums[k];
+    for (m = 0; m < 82; m++) {
+        n = document.getElementById(m).innerHTML;
+        nums[m] = Math.floor(Math.random()*9+1);        
+        n = nums[m];
+        while (check(nums[m]) === false) {
+            nums[m] = Math.floor(Math.random()*9+1);       
+            n = nums[m];
         }
         //insert text boxes
-        if (array.includes(k) === false) {            
+        if (array.includes(m) === false) {            
             tds.innerHTML = '<input type="text" />';
         }
     }
