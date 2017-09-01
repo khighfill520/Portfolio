@@ -98,12 +98,12 @@ function play(value) {
     
     //generate finished puzzle
     for (m = 0; m < 82; m++) {
-        n = document.getElementById(m).innerHTML;
+        n = document.getElementById(m);
         nums[m] = Math.floor(Math.random()*9+1);        
-        n = nums[m];
+        n.innerHTML = nums[m];
         while (check(nums[m]) === false) {
             nums[m] = Math.floor(Math.random()*9+1);       
-            n = nums[m];
+            n.innerHTML = nums[m];
         }
         //insert text boxes
         if (array.includes(m) === false) {            
