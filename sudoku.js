@@ -37,7 +37,7 @@ function sudoku() {
             m++;
         }
     }
-    body.innerHTML += puzzle;
+    document.body.innerHTML += puzzle;
     puzzle.setAttribute('id', 'puzzle');
     puzzle.appendChild(table);
 }
