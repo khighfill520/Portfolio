@@ -19,7 +19,7 @@ function sudoku() {
     //change buttons
     div.innerHTML = "";
     for (i = 0; i < 3; i++) {
-        div.innerHTML += '<input type="submit" value="' + diffs[i] + '" onClick="play(this.value); />
+        div.innerHTML += '<input type="submit" value="' + diffs[i] + '" onClick="play(this.value);" />';
     }
         
     
