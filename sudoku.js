@@ -79,13 +79,13 @@ function play(value) {
             j.className = 'boxA';
         } else if ((k <= 3) && ((i % 9) <= 6)) {
             j.className = 'boxB';
-        } else if ((k <= 3) && (((i % 9) < 9) || ((i % 9) == 0))) {
+        } else if ((k <= 3) && (((i % 9) > 6) || ((i % 9) == 0))) {
             j.className = 'boxC';
         } else if ((k <= 6) && ((i % 9) <= 3)) {
             j.className = 'boxD';
         } else if ((k <= 6) && ((i % 9) <= 6)) {
             j.className = 'boxE';
-        } else if (k <= 6) && (((i % 9) < 9) || ((i % 9) == 0))) {
+        } else if ((k <= 6) && (((i % 9) > 6) || ((i % 9) == 0))) {
             j.className = 'boxF';
         } else if ((k <= 9) && ((i % 9) <= 3)) {
             j.className = 'boxG';
