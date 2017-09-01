@@ -75,24 +75,24 @@ function play(value) {
     for (i = 1; i < 82; i++) {
         j = document.getElementById(i);
         k = (i / 9);
-        if ((k <= 3) && ((i % 9) <= 3)) {
-            j.className = 'boxA';
+        if ((k <= 3) && ((i % 9) <= 3) && ((i % 9) !== 0)) {
+            j.className += 'boxA';
         } else if ((k <= 3) && ((i % 9) <= 6)) {
-            j.className = 'boxB';
+            j.className += 'boxB';
         } else if ((k <= 3) && (((i % 9) > 6) || ((i % 9) == 0))) {
-            j.className = 'boxC';
-        } else if ((k <= 6) && ((i % 9) <= 3)) {
-            j.className = 'boxD';
+            j.className += 'boxC';
+        } else if ((k <= 6) && ((i % 9) <= 3) && ((i % 9) !== 0)) {
+            j.className += 'boxD';
         } else if ((k <= 6) && ((i % 9) <= 6)) {
-            j.className = 'boxE';
+            j.className += 'boxE';
         } else if ((k <= 6) && (((i % 9) > 6) || ((i % 9) == 0))) {
-            j.className = 'boxF';
-        } else if ((k <= 9) && ((i % 9) <= 3)) {
-            j.className = 'boxG';
+            j.className += 'boxF';
+        } else if ((k <= 9) && ((i % 9) <= 3) && ((i % 9) !== 0)) {
+            j.className += 'boxG';
         } else if ((k <= 9) && ((i % 9) <= 6)) {
-            j.className = 'boxH';
+            j.className += 'boxH';
         } else {
-            j.className = 'boxI';
+            j.className += 'boxI';
         }
     }
     
