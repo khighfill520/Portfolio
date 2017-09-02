@@ -1,3 +1,5 @@
+var nums = [];
+    
 function sudoku() {
     
     //declare variables
@@ -56,7 +58,6 @@ function play(value) {
     var easy = [1, 2, 3, 5, 7, 8, 9, 10, 12, 14, 16, 18, 19, 20, 21, 24, 25, 26, 27, 30, 31, 32, 33, 37, 38, 40, 41, 42, 44, 45, 49, 50, 51, 52, 55, 56, 57, 58, 61, 62, 63, 64, 66, 68, 70, 72, 73, 74, 75, 77, 79, 80, 81];
     var med = [4, 5, 6, 7, 8, 10, 13, 15, 19, 23, 24, 28, 29, 30, 32, 35, 36, 37, 39, 40, 41, 42, 43, 45, 46, 47, 50, 52, 53, 54, 58, 59, 63, 67, 69, 72, 74, 75, 76, 77, 78];
     var hard = [2, 6, 11, 12, 15, 17, 18, 21, 24, 25, 26, 28, 29, 30, 52, 53, 54, 56, 57, 58, 61, 64, 65, 67, 70, 71, 76, 80];
-    var nums = [];
     var i;
     var j;
     var k;
@@ -102,7 +103,7 @@ function play(value) {
         n = document.getElementById(m);
         nums[m] = Math.floor(Math.random()*9+1);        
         n.innerHTML = nums[m];
-        while (check(nums[m]) === false) {
+        while (check() === false) {
             nums[m] = Math.floor(Math.random()*9+1);       
             n.innerHTML = nums[m];
         }
@@ -114,7 +115,7 @@ function play(value) {
     document.body.removeChild(buttons);
 }
 
-function check(number) {
+function check() {
     
     //declare variables
     var i;
@@ -127,62 +128,64 @@ function check(number) {
     var r;
     var t;
     var u;
+    var flag = true;
     var varj;
     var varp;
-    var num = number;
     var clss;
     var comp1;
     var comp2;
     
     //get first number to compare
     for (i = 1; i < 82; i++) {
-        comp1 = document.getElementById(i).innerHTML;
+        comp1 = nums[i];
         if (i == 1) {
+            break;
         } else {
             //check row for duplicates
             while (j < 9) {
                 j = 1;
-                varj = document.getElementById(i);
+                varj = nums[i];
                 while ((varj % 9) !== 0) {
-                    varj = document.getElementById(i + j);
+                    varj = nums[(i + j)];
                     j++;
                 }
                 k = 9 - j;
                 for (m = 1; m <= k; m++) {
-                    comp2 = document.getElementById(i - m).innerHTML;
+                    comp2 = nums[(i - m)];
                     if (comp1 == comp2) {
-                        return false;
+                        flag = false;
                     }
                 }
                 for (n = 1; n < j; n++) {
-                    comp2 = document.getElementById(i + n).innerHTML;
+                    comp2 = nums[(i + n)];
                     if (comp1 == comp2) {
-                        return false;
+                        flag = false;
                     }
                 }
             }
             //check column for duplicates
             while (p <=9)
                 p = 1;
-                varp = document.getElementById(i);
+                varp = nums[i];
             while ((varp / 9) < 9) {
-                varp = document.getElementById(i + p);
+                varp = nums[(i + p)];
                 p++;
             }
             q = 9 - p;
             for (r = 1; r <= q; r++) {
-                    comp2 = document.getElementById(i - (r * 9)).innerHTML;
+                    comp2 = nums[(i - (r * 9))];
                     if (comp1 == comp2) {
-                        return false;
+                        flag = false;
                     }
             }
             for (t = 1; t < p; t++) {
-                comp2 = document.getElementById(i + (t * 9)).innerHTML;
+                comp2 = nums[(i + (t * 9))];
                 if (comp1 == comp2) {
-                    return false;
+                    flag = false;
                 }
             }
             //check box for duplicates
         }
     }
+    return flag;
 }
