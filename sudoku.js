@@ -141,7 +141,7 @@ function check() {
             nums[i] = 0;
         }
         comp1 = nums[i];
-        if ((i == 1) || (nums[i] == 0) {
+        if ((i == 1) || (nums[i] == 0)) {
             break;
         } else {
             //check row for duplicates
