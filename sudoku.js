@@ -127,7 +127,7 @@ function check() {
     var r;
     var t;
     var u;
-    var flag = true;
+    var box;
     var varj;
     var varp;
     var clss;
@@ -136,11 +136,10 @@ function check() {
     
     //get first number to compare
     for (i = 1; i < 82; i++) {
-        if (!nums[i]) {
-            nums[i] = 0;
-        }
         comp1 = nums[i];
-        if ((i == 1) || (nums[i] == 0)) {
+        if (!comp1) {
+            return false;
+        } else if (i == 1) {
             break;
         } else {
             //check row for duplicates
@@ -153,21 +152,19 @@ function check() {
                 }
                 k = 9 - j;
                 for (m = 1; m <= k; m++) {
-                    if (nums[(i - m)] == 0) {
-                        break;
-                    }
                     comp2 = nums[(i - m)];
-                    if (comp1 == comp2) {
-                        flag = false;
+                    if (!comp2) {
+                        break;
+                    } else if (comp1 == comp2) {
+                        return false;
                     }
                 }
                 for (n = 1; n < j; n++) {
-                    if (nums[(i + n)] == 0) {
-                        break;
-                    }
                     comp2 = nums[(i + n)];
-                    if (comp1 == comp2) {
-                        flag = false;
+                    if (!comp2) {
+                        break;
+                    } else if (comp1 == comp2) {
+                        return false;
                     }
                 }
             }
@@ -181,26 +178,37 @@ function check() {
             }
             q = 9 - p;
             for (r = 1; r <= q; r++) {
-                if (nums[(i - (r * 9))] == 0) {
-                    break;
-                }
                 comp2 = nums[(i - (r * 9))];
-                if (comp1 == comp2) {
-                    flag = false;
+                if (!comp2) {
+                    break;
+                } else if (comp1 == comp2) {
+                    return false;
                 }
             }
             for (t = 1; t < p; t++) {
-                if (nums[(i + (t * 9))] == 0) {
-                    break;
-                }
                 comp2 = nums[(i + (t * 9))];
-                if (comp1 == comp2) {
-                    flag = false;
+                if (!comp2) {
+                    break;
+                } else if (comp1 == comp2) {
+                    return false;
                 }
             }
             //check box for duplicates
-            
+            if (comp1.classList.length == 2) {
+                clss = comp1.classList.item(1);
+            } else {
+                clss = comp1.className;
+            }
+            box = document.getElementsByClassName(clss);
+            for (u = 0; u < box.length; u++) {
+                comp2 = box[u];
+                if ((comp1.id == comp2.id) || (!comp2)) {
+                    break;
+                } else if (comp1 == comp2){
+                    return false;
+                }
+            }                 
         }
     }
-    return flag;
+    return true;
 }
