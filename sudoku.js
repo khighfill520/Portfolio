@@ -137,8 +137,11 @@ function check() {
     
     //get first number to compare
     for (i = 1; i < 82; i++) {
+        if (!nums[i]) {
+            nums[i] = 0;
+        }
         comp1 = nums[i];
-        if (i == 1) {
+        if ((i == 1) || (nums[i] == 0) {
             break;
         } else {
             //check row for duplicates
@@ -151,12 +154,18 @@ function check() {
                 }
                 k = 9 - j;
                 for (m = 1; m <= k; m++) {
+                    if (nums[(i - m)] == 0) {
+                        break;
+                    }
                     comp2 = nums[(i - m)];
                     if (comp1 == comp2) {
                         flag = false;
                     }
                 }
                 for (n = 1; n < j; n++) {
+                    if (nums[(i + n)] == 0) {
+                        break;
+                    }
                     comp2 = nums[(i + n)];
                     if (comp1 == comp2) {
                         flag = false;
@@ -173,12 +182,18 @@ function check() {
             }
             q = 9 - p;
             for (r = 1; r <= q; r++) {
-                    comp2 = nums[(i - (r * 9))];
-                    if (comp1 == comp2) {
-                        flag = false;
-                    }
+                if (nums[(i - (r * 9))] == 0) {
+                    break;
+                }
+                comp2 = nums[(i - (r * 9))];
+                if (comp1 == comp2) {
+                    flag = false;
+                }
             }
             for (t = 1; t < p; t++) {
+                if (nums[(i + (t * 9))] == 0) {
+                    break;
+                }
                 comp2 = nums[(i + (t * 9))];
                 if (comp1 == comp2) {
                     flag = false;
