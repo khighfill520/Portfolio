@@ -210,5 +210,4 @@ function check() {
             }                 
         }
     }
-    return true;
 }
