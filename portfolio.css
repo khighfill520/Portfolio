@@ -50,6 +50,9 @@ input[type="submit"]:hover, input[type="button"]:hover{
 nav{
   text-align: center;
   margin-bottom: 10px;
+  border-top: solid 3px;
+  border-bottom: solid 3px;
+  border-color: #000;
 }
 a:link, a:active, a:visited{
   padding: 5px;
