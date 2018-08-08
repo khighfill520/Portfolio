@@ -145,8 +145,9 @@ td input[type="text"]:focus{
   margin: auto;
 }
 .intro{
-  margin-top: 10px;
-  background: linear-gradient(to right bottom, #d0d0d0, #1f9e08);
+  margin-top: 0px;
+  background: linear-gradient(to bottom, #d0d0d0, #1f9e08);
+  padding: 5px;
 }
 .links{
   margin-bottom: 10px;
