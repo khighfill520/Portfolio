@@ -145,10 +145,11 @@ td input[type="text"]:focus{
   margin: auto;
 }
 .intro{
-  margin-top: 300px;
+  margin-top: 10px;
+  background: linear-gradient(to right bottom, #d0d0d0, #1f9e08);
 }
 .links{
-  margin-bottom: 300px;
+  margin-bottom: 10px;
 }
 .projects{
   width: 30%;
