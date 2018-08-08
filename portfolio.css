@@ -54,6 +54,9 @@ nav{
   border-bottom: solid 3px;
   border-color: #000;
 }
+a.navbar{
+  padding: 10px;
+}
 a:link, a:active, a:visited{
   padding: 5px;
   color: #FFF;
