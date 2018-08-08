@@ -2,21 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
 body{
-  background: #1f9e08;
+  background: #d0d0d0;
   background-repeat: no-repeat;
   background-size: 100%;
   font-family: "Reem Kufi", sans-serif;
-  color: #d0d0d0;
+  color: #1f9e08;
 }
 h2{
   font-family: "Artifika", serif;
-  color: #d0d0d0;
+  color: #1f9e08;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.5);
 }
 h4{
   font-family: "Artifika", serif;
-  color: #000011;
+  color: #1f9e08;
   background: #d0d0d0;
   width: 50%;
   -webkit-border-radius: 10px;
@@ -32,8 +32,8 @@ input[type="text"]{
   width: 3em;
 }
 input[type="submit"], input[type="button"]{
-  background: #000011;
-  color: #FFF;
+  background: #d0d0d0;
+  color: #1f9e08;
   border: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -42,7 +42,7 @@ input[type="submit"], input[type="button"]{
 }
 input[type="submit"]:hover, input[type="button"]:hover{
   background: rgba(0, 0, 0, 0);
-  color: #000011;
+  color: #1f9e08;
   box-shadow: 0 0 20px #FFF inset;
   transition: 1s;
 }
