@@ -49,7 +49,7 @@ input[type="submit"]:hover, input[type="button"]:hover{
 }
 nav a{
   padding: 10px;
-  color: #FFF;
+  color: #000;
 }
 nav{
   background: #1f9e08;
