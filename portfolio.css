@@ -47,10 +47,6 @@ input[type="submit"]:hover, input[type="button"]:hover{
   box-shadow: 0 0 20px #FFF inset;
   transition: 1s;
 }
-nav a{
-  padding: 10px;
-  color: #000;
-}
 nav{
   background: #1f9e08;
   text-align: center;
@@ -70,6 +66,10 @@ a:hover{
   text-decoration: none;
   box-shadow: 0 0 40px #FFF inset;
   transition: 1s;
+}
+nav a{
+  padding: 10px;
+  color: #000;
 }
 p{
   color: #FFF;
