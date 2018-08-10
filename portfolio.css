@@ -44,12 +44,9 @@ input[type="submit"], input[type="button"]{
 input[type="submit"]:hover, input[type="button"]:hover{
   background: #d0d0d0;
   color: #1f9e08;
+  border: solid 1px;
   border-color: #000;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  box-shadow: 0 0 20px #FFF inset;
-  transition: 1s;
+  transition: .5s;
 }
 nav{
   background: #1f9e08;
