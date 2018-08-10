@@ -67,11 +67,11 @@ nav a:hover{
 }
 a:link, a:active, a:visited, a:hover{
   padding: 5px;
-  color: #FFF;
+  color: #1f9e08;
   text-decoration: none;
 }
 p{
-  color: #FFF;
+  color: #000;
 }
 td input[type="text"]{
   width: 2em;
