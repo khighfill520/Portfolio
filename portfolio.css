@@ -128,7 +128,7 @@ td input[type="text"]:focus{
 }
 .heavy_right{
   border-right: 3px solid !important;
-  border-color: #000;
+  border-color: #000 !important;
 }
 .heavy_bottom{
   border-bottom: 3px solid;
