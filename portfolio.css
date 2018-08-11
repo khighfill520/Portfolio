@@ -175,13 +175,13 @@ td input[type="text"]:focus{
 }
 #puzzle table{
   border: 3px solid;
-  border-color: #FFF;
+  border-color: #000;
   border-collapse: collapse;
   margin: auto;
 }
 #puzzle td{
   border: 1px solid;
-  border-color: #FFF;
+  border-color: #000;
   width: 2em;
   height: 2em;
 }
