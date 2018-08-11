@@ -79,7 +79,7 @@ td input[type="text"]{
   margin: 0px;
   border: none;
   background: rgba(0, 0, 0, 0);
-  color: #FFF;
+  color: #000;
   text-align: center;
   font: 20px "Reem Kufi";
 }
@@ -128,11 +128,11 @@ td input[type="text"]:focus{
 }
 .heavy_right{
   border-right: 3px solid !important;
-  border-color: #FFF;
+  border-color: #000;
 }
 .heavy_bottom{
   border-bottom: 3px solid;
-  border-color: #FFF;
+  border-color: #000;
 }
 
 .images{
