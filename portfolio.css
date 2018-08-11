@@ -40,14 +40,13 @@ input[type="submit"], input[type="button"]{
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5) inset;
 }
 input[type="submit"]:hover, input[type="button"]:hover{
   background: #d0d0d0;
   color: #1f9e08;
   border: solid 1px;
   border-color: #000;
-  transition: .5s;
 }
 nav{
   background: #1f9e08;
