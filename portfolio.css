@@ -101,10 +101,6 @@ td input[type="text"]:focus{
   border-radius: 10px;
   text-align: center;
 }
-.button:hover{
-  box-shadow: 0 0 40px #FFF inset;
-  transition: 1s;
-}
 .container{
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
