@@ -103,9 +103,7 @@ function play(value) {
         n = document.getElementById(m);
         nums[m] = Math.floor(Math.random()*9+1);        
         n.innerHTML = nums[m];
-        chkplz = check();
-        while (chkplz === false) {
-            console.log(chkplz);
+        while (check() === false) {
             nums[m] = Math.floor(Math.random()*9+1);       
             n.innerHTML = nums[m];
         }
@@ -138,14 +136,12 @@ function check() {
     var comp2;
     
     //get first number to compare
-    for (i = 1; i < 82; i++) {
+    for (i = 2; i < 82; i++) {
         comp1 = nums[i];
         console.log(i);
         console.log(nums[i]);
         if (!comp1) {
             return false;
-        } else if (i == 1) {
-            break;
         } else {
             //check row for duplicates
             while (j < 9) {
