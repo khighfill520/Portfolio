@@ -103,6 +103,7 @@ function play(value) {
         nums[m] = Math.floor(Math.random()*9+1);        
         n.innerHTML = nums[m];
         while (check() === false) {
+            console.log(check());
             nums[m] = Math.floor(Math.random()*9+1);       
             n.innerHTML = nums[m];
         }
