@@ -140,6 +140,8 @@ function check() {
     //get first number to compare
     for (i = 1; i < 82; i++) {
         comp1 = nums[i];
+        console.log(i);
+        console.log(nums[i]);
         if (!comp1) {
             return false;
         } else if (i == 1) {
