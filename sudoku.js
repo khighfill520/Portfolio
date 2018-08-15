@@ -197,7 +197,7 @@ function check() {
                 }
             }
             //check box for duplicates
-            if (comp1.classList.length == 2) {
+           /* if (comp1.classList.length == 2) {
                 clss = comp1.classList.item(1);
             } else {
                 clss = comp1.className;
@@ -210,7 +210,7 @@ function check() {
                 } else if (comp1 == comp2){
                     return false;
                 }
-            }                 
+            } */                
         }
     }
 }
