@@ -138,8 +138,6 @@ function check() {
     //get first number to compare
     for (i = 1; i < 82; i++) {
         comp1 = nums[i];
-        console.log(i);
-        console.log(comp1);
         if (!comp1) {
             return true;
         } else {
@@ -155,7 +153,7 @@ function check() {
                 for (m = 1; m <= k; m++) {
                     comp2 = nums[(i - m)];
                     if (!comp2) {
-                        break;
+                        continue;
                     } else if (comp1 == comp2) {
                         return false;
                     }
@@ -163,7 +161,7 @@ function check() {
                 for (n = 1; n < j; n++) {
                     comp2 = nums[(i + n)];
                     if (!comp2) {
-                        break;
+                        continue;
                     } else if (comp1 == comp2) {
                         return false;
                     }
@@ -181,7 +179,7 @@ function check() {
             for (r = 1; r <= q; r++) {
                 comp2 = nums[(i - (r * 9))];
                 if (!comp2) {
-                    break;
+                    continue;
                 } else if (comp1 == comp2) {
                     return false;
                 }
@@ -189,7 +187,7 @@ function check() {
             for (t = 1; t < p; t++) {
                 comp2 = nums[(i + (t * 9))];
                 if (!comp2) {
-                    break;
+                    continue;
                 } else if (comp1 == comp2) {
                     return false;
                 }
@@ -207,7 +205,7 @@ function check() {
             for (u = 0; u < box.length; u++) {
                 comp2 = box[u];
                 if ((comp1.id == comp2.id) || (!comp2)) {
-                    break;
+                    continue;
                 } else if (comp1 == comp2){
                     return false;
                 }
