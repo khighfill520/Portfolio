@@ -141,8 +141,6 @@ function check() {
         console.log(i);
         console.log(comp1);
         if (!comp1) {
-            return false;
-        } else if (!comp1) {
             return true;
         } else {
             //check row for duplicates
@@ -197,7 +195,7 @@ function check() {
                 }
             }
             //check box for duplicates
-            console.log(comp1.classList.length);
+            console.log(comp1.classList);
             if (comp1.classList.length == 2) {
                 clss = comp1.classList.item(1);
             } else {
