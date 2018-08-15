@@ -103,7 +103,7 @@ function play(value) {
         n = document.getElementById(m);
         nums[m] = Math.floor(Math.random()*9+1);        
         n.innerHTML = nums[m];
-        while (check() === false) {
+        if (check() === false) {
             nums[m] = Math.floor(Math.random()*9+1);       
             n.innerHTML = nums[m];
         }
@@ -136,10 +136,10 @@ function check() {
     var comp2;
     
     //get first number to compare
-    for (i = 2; i < 82; i++) {
+    for (i = 1; i < 82; i++) {
         comp1 = nums[i];
         console.log(i);
-        console.log(nums[i]);
+        console.log(comp1);
         if (!comp1) {
             return false;
         } else {
