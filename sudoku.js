@@ -142,6 +142,8 @@ function check() {
         console.log(comp1);
         if (!comp1) {
             return false;
+        } else if (!comp1) {
+            return true;
         } else {
             //check row for duplicates
             while (j < 9) {
