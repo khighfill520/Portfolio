@@ -168,7 +168,7 @@ function check() {
                 }
             }
             //check column for duplicates
-            while (p <=9)
+            /*while (p <=9)
                 p = 1;
                 varp = nums[i];
             while ((varp / 9) < 9) {
@@ -207,7 +207,7 @@ function check() {
                 } else if (comp1 == comp2){
                     return false;
                 }
-            }              
+            }*/              
         }
     }
 }
