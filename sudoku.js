@@ -193,7 +193,8 @@ function check() {
                 }
             }
             //check box for duplicates
-            console.log(comp1);
+            cell = document.getElementById(i);
+            console.log(cell.classList);
             if (!comp1.classList) {
                 continue;
             } else if (comp1.classList.length == 2) {
