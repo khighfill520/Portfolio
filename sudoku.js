@@ -131,6 +131,7 @@ function check() {
     var box;
     var varj;
     var varp;
+    var cell;
     var clss;
     var comp1;
     var comp2;
