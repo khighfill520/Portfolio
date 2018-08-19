@@ -138,6 +138,7 @@ function check() {
     //get first number to compare
     for (i = 1; i < 82; i++) {
         comp1 = nums[i];
+        conole.log(comp1);
         if (!comp1) {
             return true;
         } else {
