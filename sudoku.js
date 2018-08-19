@@ -166,47 +166,46 @@ function check() {
                  }
              }
          }
-            //check column for duplicates
-            /*while (p <=9)
-                p = 1;
-                varp = nums[i];
-            while ((varp / 9) < 9) {
-                varp = nums[(i + p)];
-                p++;
-            }
-            q = 9 - p;
-            for (r = 1; r <= q; r++) {
-                comp2 = nums[(i - (r * 9))];
-                if (!comp2) {
-                    continue;
-                } else if (comp1 == comp2) {
-                    return false;
-                }
-            }
-            for (t = 1; t < p; t++) {
-                comp2 = nums[(i + (t * 9))];
-                if (!comp2) {
-                    continue;
-                } else if (comp1 == comp2) {
-                    return false;
-                }
-            }
-            //check box for duplicates
-            cell = document.getElementById(i);
-            if (cell.classList.length == 2) {
-                clss = cell.classList.item(1);
-            } else {
-                clss = cell.className;
-            }
-            box = document.getElementsByClassName(clss);
-            for (u = 0; u < box.length; u++) {
-                comp2 = box[u];
-                if ((comp1.id == comp2.id) || (!comp2)) {
-                    continue;
-                } else if (comp1 == comp2){
-                    return false;
-                }
-            }*/              
-        }
-    }
-}
+         //check column for duplicates
+         /*while (p <=9)
+             p = 1;
+             varp = nums[i];
+         while ((varp / 9) < 9) {
+             varp = nums[(i + p)];
+             p++;
+         }
+         q = 9 - p;
+         for (r = 1; r <= q; r++) {
+             comp2 = nums[(i - (r * 9))];
+             if (!comp2) {
+                 continue;
+             } else if (comp1 == comp2) {
+                 return false;
+             }
+         }
+         for (t = 1; t < p; t++) {
+             comp2 = nums[(i + (t * 9))];
+             if (!comp2) {
+                 continue;
+             } else if (comp1 == comp2) {
+                 return false;
+             }
+         }
+         //check box for duplicates
+         cell = document.getElementById(i);
+         if (cell.classList.length == 2) {
+             clss = cell.classList.item(1);
+         } else {
+             clss = cell.className;
+         }
+         box = document.getElementsByClassName(clss);
+         for (u = 0; u < box.length; u++) {
+             comp2 = box[u];
+             if ((comp1.id == comp2.id) || (!comp2)) {
+                 continue;
+             } else if (comp1 == comp2){
+                 return false;
+             }
+         }*/              
+     }
+ }
