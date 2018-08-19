@@ -140,35 +140,32 @@ function check() {
     for (i = 1; i < 82; i++) {
         comp1 = nums[i];
         console.log(comp1);
-        if (!comp1) {
-            return true;
-        } else {
-            //check row for duplicates
-            while (j < 9) {
-                j = 1;
-                varj = nums[i];
-                while ((varj % 9) !== 0) {
-                    varj = nums[(i + j)];
-                    j++;
-                }
-                k = 9 - j;
-                for (m = 1; m <= k; m++) {
-                    comp2 = nums[(i - m)];
-                    if (!comp2) {
-                        continue;
-                    } else if (comp1 == comp2) {
-                        return false;
-                    }
-                }
-                for (n = 1; n < j; n++) {
-                    comp2 = nums[(i + n)];
-                    if (!comp2) {
-                        continue;
-                    } else if (comp1 == comp2) {
-                        return false;
-                    }
-                }
+        //check row for duplicates
+        while (j < 9) {
+            j = 1;
+            varj = nums[i];
+            while ((varj % 9) !== 0) {
+                varj = nums[(i + j)];
+                j++;
             }
+            k = 9 - j;
+            for (m = 1; m <= k; m++) {
+                comp2 = nums[(i - m)];
+                if (!comp2) {
+                    continue;
+                } else if (comp1 == comp2) {
+                     return false;
+                }
+             }
+             for (n = 1; n < j; n++) {
+                 comp2 = nums[(i + n)];
+                 if (!comp2) {
+                     continue;
+                 } else if (comp1 == comp2) {
+                     return false;
+                 }
+             }
+         }
             //check column for duplicates
             /*while (p <=9)
                 p = 1;
