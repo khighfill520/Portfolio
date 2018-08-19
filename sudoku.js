@@ -76,6 +76,7 @@ function play(value) {
     for (i = 1; i < 82; i++) {
         j = document.getElementById(i);
         k = (i / 9);
+        //TURN INTO FOR LOOP
         if ((k <= 3) && ((i % 9) <= 3) && ((i % 9) !== 0)) {
             j.className += 'boxA';
         } else if ((k <= 3) && ((i % 9) <= 6) && ((i % 9) !== 0)) {
@@ -138,7 +139,7 @@ function check() {
     //get first number to compare
     for (i = 1; i < 82; i++) {
         comp1 = nums[i];
-        conole.log(comp1);
+        console.log(comp1);
         if (!comp1) {
             return true;
         } else {
