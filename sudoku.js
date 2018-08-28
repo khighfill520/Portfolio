@@ -137,7 +137,6 @@ function check() {
     //get first number to compare
     for (i = 1; i < 82; i++) {
         //check row for duplicates
-        console.log(i);
         while (j < 9) {
             j = 1;
             k = i + j;
