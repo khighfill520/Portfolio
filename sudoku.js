@@ -137,13 +137,18 @@ function check() {
     //get first number to compare
     for (i = 1; i < 82; i++) {
         //check row for duplicates
+        console.log(i);
         while (j < 9) {
             j = 1;
             k = i + j;
+            console.log(k);
+            console.log(nums[i]);
+            console.log(nums[k]);
             if (nums[i] === nums[k]) {
                 return false;
             }
             j++;
+            console.log(j);
          }
          //check column for duplicates
          /*while (p <=9)
