@@ -133,7 +133,6 @@ function check() {
     var varp;
     var cell;
     var clss;
-    var comp1;
     var comp2;
     
     //get first number to compare
@@ -143,28 +142,11 @@ function check() {
         //check row for duplicates
         while (j < 9) {
             j = 1;
-            varj = nums[i];
-            while ((varj % 9) !== 0) {
-                varj = nums[(i + j)];
-                j++;
+            k = i + j;
+            if (nums[i] == nums[k]) {
+                return false;
             }
-            k = 9 - j;
-            for (m = 1; m <= k; m++) {
-                comp2 = nums[(i - m)];
-                if (!comp2) {
-                    continue;
-                } else if (comp1 == comp2) {
-                     return false;
-                }
-             }
-             for (n = 1; n < j; n++) {
-                 comp2 = nums[(i + n)];
-                 if (!comp2) {
-                     continue;
-                 } else if (comp1 == comp2) {
-                     return false;
-                 }
-             }
+            j++;
          }
          //check column for duplicates
          /*while (p <=9)
