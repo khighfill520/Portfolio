@@ -133,17 +133,14 @@ function check() {
     var varp;
     var cell;
     var clss;
-    var comp2;
     
     //get first number to compare
     for (i = 1; i < 82; i++) {
-        comp1 = nums[i];
-        console.log(comp1);
         //check row for duplicates
         while (j < 9) {
             j = 1;
             k = i + j;
-            if (nums[i] == nums[k]) {
+            if (nums[i] === nums[k]) {
                 return false;
             }
             j++;
