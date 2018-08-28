@@ -139,6 +139,7 @@ function check() {
         j = 1;
         //check row for duplicates
         while (j < 9) {
+            console.log(j);
             k = i + j;
             console.log(k);
             console.log(nums[i]);
@@ -147,7 +148,6 @@ function check() {
                 return false;
             }*/
             j++;
-            console.log(j);
          }
          //check column for duplicates
          /*while (p <=9)
