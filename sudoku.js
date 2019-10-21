@@ -144,9 +144,9 @@ function check() {
             console.log(k);
             console.log(nums[i]);
             console.log(nums[k]);
-            /*if (nums[i] === nums[k]) {
+            if (nums[i] === nums[k]) {
                 return false;
-            }*/
+            }
             j++;
          }
          //check column for duplicates
